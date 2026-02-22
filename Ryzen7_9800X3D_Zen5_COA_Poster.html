@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMD Ryzen 7 9850X3D – COA Poster</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&family=Barlow+Condensed:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="poster">
+
+    <!-- HEADER -->
+    <div class="hdr">
+      <div class="hdr-left">
+        <h1><em>AMD</em> Ryzen 7 9850X3D Processor</h1>
+        <div class="sub">23CSE213 · Computer Organization and Architecture · B.Tech CSE 2024–28 · Semester 4</div>
+      </div>
+      <div class="hdr-logo">
+        <img class="logo" src="amd_logo.jpeg" alt="AMD Logo">
+      </div>
+    </div>
+    <div class="accent"></div>
+
+    <!-- BODY -->
+    <div class="body">
+
+      <!-- ═══ COL 1 ═══ -->
+      <div>
+
+        <!-- ARCHITECTURE -->
+        <div class="card">
+          <div class="ch ch-red">Architecture Overview</div>
+          <div class="cb">
+            <h4>Architecture Block Diagram</h4>
+            <div style="margin:4px 0 6px;">
+              <div class="abox a1" style="width:93%;">AMD Ryzen 7 9850X3D — AM5 Socket</div>
+              <div class="arr">↕ Infinity Fabric (FCLK ~2000 MHz)</div>
+              <div class="abox a2" style="width:93%;">Compute Die (CCD) — TSMC 4nm · 8 Zen 5 Cores</div>
+              <div class="arr">↕</div>
+              <div class="arow">
+                <div class="abox a3" style="width:45%;">CCX<br><small style="font-size:8.5px;">8 Cores · 32MB L3</small>
+                </div>
+                <div class="abox a3" style="width:45%;">3D V-Cache<br><small style="font-size:8.5px;">64MB SRAM
+                    stacked</small></div>
+              </div>
+              <div class="arr">↕ Infinity Fabric</div>
+              <div class="abox a4" style="width:93%;">I/O Die (cIOD) — TSMC 6nm</div>
+              <div class="arr">↕</div>
+              <div class="arow">
+                <div class="abox a5" style="width:45%;">DDR5 Mem Ctrl<br><small style="font-size:8.5px;">Dual Channel
+                    128-bit</small></div>
+                <div class="abox a5" style="width:45%;">PCIe 5.0 + USB<br><small style="font-size:8.5px;">x16 + SATA /
+                    USB4</small></div>
+              </div>
+              <div class="arr">↕</div>
+              <div class="arow">
+                <div class="abox a6" style="width:45%;">DDR5-5600 RAM</div>
+                <div class="abox a6" style="width:45%;">Motherboard (X670E)</div>
+              </div>
+            </div>
+
+            <div class="sg">
+              <div class="st">
+                <div class="sk">Process Node</div>
+                <div class="sv">TSMC 4nm</div>
+              </div>
+              <div class="st">
+                <div class="sk">Transistors</div>
+                <div class="sv">~8.9 Billion</div>
+              </div>
+              <div class="st">
+                <div class="sk">Die Size CCD</div>
+                <div class="sv">71 mm²</div>
+              </div>
+              <div class="st">
+                <div class="sk">Design Type</div>
+                <div class="sv">Monolithic+3D</div>
+              </div>
+              <div class="st">
+                <div class="sk">L1 Cache/Core</div>
+                <div class="sv">48KB D + 32KB I</div>
+              </div>
+              <div class="st">
+                <div class="sk">L2 Cache/Core</div>
+                <div class="sv">1 MB 8-way</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- REGISTER STRUCTURE -->
+        <div class="card">
+          <div class="ch ch-blue">Register Structure (x86-64 / AMD64)</div>
+          <div class="cb">
+            <h4>Register Width Diagram</h4>
+            <svg viewBox="0 0 370 130" width="100%" xmlns="http://www.w3.org/2000/svg"
+              style="border:1px solid #e5e8f0;border-radius:3px;background:#f9fbff;margin-bottom:5px;">
+              <text x="7" y="14" font-family="JetBrains Mono,monospace" font-size="11" fill="#0057B8"
+                font-weight="700">x86-64 Backward Compatibility:</text>
+              <text x="7" y="30" font-family="JetBrains Mono,monospace" font-size="11" fill="#555">RAX (64b)</text>
+              <rect x="75" y="20" width="145" height="13" rx="2" fill="#e8f0ff" stroke="#0057B8" stroke-width="1.5" />
+              <text x="147" y="30" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="10"
+                fill="#0057B8" font-weight="700">63 ──────────── 0</text>
+              <text x="7" y="49" font-family="JetBrains Mono,monospace" font-size="11" fill="#555">EAX (32b)</text>
+              <rect x="75" y="38" width="145" height="13" rx="2" fill="#fff0f0" stroke="#ED1C24" stroke-width="1.5" />
+              <text x="147" y="48" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="10"
+                fill="#ED1C24" font-weight="600">31 ──────────── 0</text>
+              <text x="7" y="67" font-family="JetBrains Mono,monospace" font-size="11" fill="#555">AX (16b)</text>
+              <rect x="75" y="56" width="72" height="13" rx="2" fill="#fff3e8" stroke="#E05A00" stroke-width="1.5" />
+              <text x="110" y="66" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="10"
+                fill="#E05A00" font-weight="600">15 ──── 0</text>
+              <text x="7" y="86" font-family="JetBrains Mono,monospace" font-size="11" fill="#555">AH / AL</text>
+              <rect x="75" y="75" width="34" height="12" rx="2" fill="#e6fff8" stroke="#006B63" stroke-width="1.5" />
+              <text x="84" y="85" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="10"
+                fill="#006B63" font-weight="700">AH</text>
+              <rect x="113" y="75" width="34" height="12" rx="2" fill="#f2ecff" stroke="#52278C" stroke-width="1.5" />
+              <text x="130" y="85" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="10"
+                fill="#52278C" font-weight="700">AL</text>
+              <!-- SIMD registers right column -->
+              <rect x="226" y="18" width="140" height="14" rx="2" fill="#ffe8f0" stroke="#ED1C24" stroke-width="1.5" />
+              <text x="296" y="29" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="10"
+                fill="#7a0010" font-weight="700">ZMM0–ZMM31 (512-bit) ★</text>
+              <rect x="226" y="36" width="140" height="14" rx="2" fill="#fffbe8" stroke="#9a6b00" stroke-width="1.5" />
+              <text x="296" y="47" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="10"
+                fill="#5a3a00" font-weight="700">YMM0–YMM31 (256-bit)</text>
+              <rect x="226" y="54" width="140" height="14" rx="2" fill="#e8f8ff" stroke="#0057B8" stroke-width="1.5" />
+              <text x="296" y="65" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="10"
+                fill="#003070" font-weight="700">XMM0–XMM31 (128-bit)</text>
+              <rect x="226" y="72" width="140" height="14" rx="2" fill="#fff8f0" stroke="#E05A00" stroke-width="1.5" />
+              <text x="296" y="83" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="10"
+                fill="#7a2e00" font-weight="700">RFLAGS (64-bit flags)</text>
+              <rect x="226" y="90" width="140" height="14" rx="2" fill="#f0fff0" stroke="#1A6B2A" stroke-width="1.5" />
+              <text x="296" y="101" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="10"
+                fill="#0a3a12" font-weight="700">RIP — Program Counter</text>
+              <rect x="226" y="108" width="140" height="14" rx="2" fill="#f2ecff" stroke="#52278C" stroke-width="1.5" />
+              <text x="296" y="119" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="10"
+                fill="#280050" font-weight="700">CR0–CR4, CR8 (Control)</text>
+            </svg>
+
+            <table class="rt">
+              <thead>
+                <tr>
+                  <th>Register</th>
+                  <th>Bits</th>
+                  <th>Function</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="rn">RAX–RDI,R8–R15</td>
+                  <td class="rb">64</td>
+                  <td class="rd">16 General Purpose Registers</td>
+                </tr>
+                <tr>
+                  <td class="rn">RIP</td>
+                  <td class="rb">64</td>
+                  <td class="rd">Instruction Pointer (Program Counter)</td>
+                </tr>
+                <tr>
+                  <td class="rn">RFLAGS</td>
+                  <td class="rb">64</td>
+                  <td class="rd">Status: CF, ZF, SF, OF, PF, AF, DF</td>
+                </tr>
+                <tr>
+                  <td class="rn">RSP / RBP</td>
+                  <td class="rb">64</td>
+                  <td class="rd">Stack Ptr / Base Frame Ptr</td>
+                </tr>
+                <tr>
+                  <td class="rn">XMM0–XMM31</td>
+                  <td class="rb">128</td>
+                  <td class="rd">SSE / Scalar FP (32 regs in Zen 5)</td>
+                </tr>
+                <tr>
+                  <td class="rn">YMM0–YMM31</td>
+                  <td class="rb">256</td>
+                  <td class="rd">AVX / AVX2 vector registers</td>
+                </tr>
+                <tr>
+                  <td class="rn">ZMM0–ZMM31</td>
+                  <td class="rb">512</td>
+                  <td class="rd">AVX-512 (new in Zen 5)</td>
+                </tr>
+                <tr>
+                  <td class="rn">CR0–CR4, CR8</td>
+                  <td class="rb">64</td>
+                  <td class="rd">Control (paging, protection)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div><!-- end col1 -->
+
+      <!-- ═══ COL 2 (MIDDLE) ═══ -->
+      <div>
+
+        <!-- ISA -->
+        <div class="card">
+          <div class="ch ch-orange">Instruction Set Architecture (ISA) — x86-64 / AMD64 + AVX-512</div>
+          <div class="cb">
+            <div style="display:flex;gap:10px;">
+              <div style="flex:1.05;">
+                <h4>Instruction Categories</h4>
+                <table class="it">
+                  <thead>
+                    <tr>
+                      <th>Category</th>
+                      <th>Examples</th>
+                      <th>Size</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="itype">Integer Arith.</td>
+                      <td class="iex">ADD, SUB, IMUL, IDIV, INC, NEG</td>
+                      <td style="font-size:12px;">1–7B</td>
+                    </tr>
+                    <tr>
+                      <td class="itype">Logical / Shift</td>
+                      <td class="iex">AND, OR, XOR, NOT, SHL, SAR, ROR</td>
+                      <td style="font-size:12px;">1–7B</td>
+                    </tr>
+                    <tr>
+                      <td class="itype">Data Transfer</td>
+                      <td class="iex">MOV, MOVSX, MOVZX, XCHG, LEA</td>
+                      <td style="font-size:12px;">1–8B</td>
+                    </tr>
+                    <tr>
+                      <td class="itype">Stack</td>
+                      <td class="iex">PUSH, POP, PUSHF, POPF, ENTER, LEAVE</td>
+                      <td style="font-size:12px;">1–3B</td>
+                    </tr>
+                    <tr>
+                      <td class="itype">Branch / Call</td>
+                      <td class="iex">JMP, Jcc, CALL, RET, LOOP</td>
+                      <td style="font-size:12px;">2–6B</td>
+                    </tr>
+                    <tr>
+                      <td class="itype">AVX2 / SSE</td>
+                      <td class="iex">VADDPS, VMULPD, VPAND, VPCMPEQB</td>
+                      <td style="font-size:12px;">3–10B</td>
+                    </tr>
+                    <tr>
+                      <td class="itype">AVX-512 ★NEW</td>
+                      <td class="iex">VADDPS zmm, VPTERNLOGD, VPERMT2D</td>
+                      <td style="font-size:12px;">6–12B</td>
+                    </tr>
+                    <tr>
+                      <td class="itype">AES / Crypto</td>
+                      <td class="iex">AESENC, AESDEC, SHA256RNDS2, PCLMULQDQ</td>
+                      <td style="font-size:12px;">3–4B</td>
+                    </tr>
+                    <tr>
+                      <td class="itype">System</td>
+                      <td class="iex">SYSCALL, CPUID, RDMSR, WRMSR, HLT</td>
+                      <td style="font-size:12px;">2–3B</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <h4 style="margin-top:7px;">x86-64 Instruction Format (Variable Length 1–15 Bytes)</h4>
+                <div class="ifmt">
+                  <div class="iff" style="background:#444;flex:0 0 14%;">Prefix<div class="ifl">[0–4B]</div>
+                  </div>
+                  <div class="iff" style="background:#0057B8;flex:0 0 14%;">REX<div class="ifl">[0–1B]</div>
+                  </div>
+                  <div class="iff" style="background:#b03a00;flex:0 0 18%;">Opcode<div class="ifl">[1–3B]</div>
+                  </div>
+                  <div class="iff" style="background:#52278C;flex:0 0 14%;">ModR/M<div class="ifl">[0–1B]</div>
+                  </div>
+                  <div class="iff" style="background:#006B63;flex:0 0 13%;">SIB<div class="ifl">[0–1B]</div>
+                  </div>
+                  <div class="iff" style="background:#7a2800;flex:0 0 14%;">Displ.<div class="ifl">[0–4B]</div>
+                  </div>
+                  <div class="iff" style="background:#1A6B2A;flex:1;">Immediate<div class="ifl">[0–4B]</div>
+                  </div>
+                </div>
+              </div>
+
+              <div style="flex:0.6;">
+                <h4>Addressing Modes</h4>
+                <div style="margin-bottom:7px;">
+                  <span class="ac">Register</span><span class="ac">Immediate</span><span class="ac">Direct Mem</span>
+                  <span class="ac">Register Indirect</span><span class="ac">Base + Disp</span>
+                  <span class="ac">Base + Index×Scale</span><span class="ac">Base+Index×Scale+Disp</span>
+                  <span class="ac">RIP-Relative</span><span class="ac">Stack (Implicit)</span>
+                </div>
+
+                <h4>RFLAGS — Condition Codes</h4>
+                <table class="ct">
+                  <thead>
+                    <tr>
+                      <th>Flag</th>
+                      <th>Name</th>
+                      <th>Condition</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="ctn">CF</td>
+                      <td>Carry</td>
+                      <td>Unsigned overflow</td>
+                    </tr>
+                    <tr>
+                      <td class="ctn">ZF</td>
+                      <td>Zero</td>
+                      <td>Result equals zero</td>
+                    </tr>
+                    <tr>
+                      <td class="ctn">SF</td>
+                      <td>Sign</td>
+                      <td>MSB of result = 1</td>
+                    </tr>
+                    <tr>
+                      <td class="ctn">OF</td>
+                      <td>Overflow</td>
+                      <td>Signed overflow</td>
+                    </tr>
+                    <tr>
+                      <td class="ctn">PF</td>
+                      <td>Parity</td>
+                      <td>Even # of set bits</td>
+                    </tr>
+                    <tr>
+                      <td class="ctn">AF</td>
+                      <td>Aux Carry</td>
+                      <td>BCD carry from bit 3</td>
+                    </tr>
+                    <tr>
+                      <td class="ctn">DF</td>
+                      <td>Direction</td>
+                      <td>String operation dir.</td>
+                    </tr>
+                    <tr>
+                      <td class="ctn">IF</td>
+                      <td>Interrupt En.</td>
+                      <td>IRQ enable bit</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DATAPATH + PIPELINE -->
+        <!-- DATAPATH + PIPELINE -->
+        <div class="card" style="flex:1;display:flex;flex-direction:column;">
+          <div class="ch ch-purple">Datapath Diagram &amp; Pipeline Stages </div>
+          <div class="cb" style="padding:6px 8px;display:flex;flex-direction:column;flex:1;">
+            <div style="display:flex;gap:8px;align-items:stretch;flex:1;min-height:0;">
+
+              <!-- LEFT COLUMN: pipeline bar + timing + stats -->
+              <div style="flex:1.4;display:flex;flex-direction:column;gap:5px;">
+
+                <!-- PIPELINE STAGES BAR -->
+                <div>
+                  <div
+                    style="font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:700;color:#1a1a1a;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;">
+                    Out-of-Order Pipeline Stages</div>
+                  <div style="display:flex;gap:0;border-radius:4px;overflow:hidden;border:1.5px solid #330050;">
+                    <div
+                      style="flex:1;background:linear-gradient(180deg,#003d8a,#00256e);padding:7px 2px;text-align:center;position:relative;">
+                      <div style="font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;color:#fff;">
+                        FETCH</div>
+                      <div style="font-size:10px;color:#aad0ff;margin-top:1px;line-height:1.3;">I-Cache<br>32KB</div>
+                      <div
+                        style="position:absolute;right:-5px;top:50%;transform:translateY(-50%);color:#ffffff;font-size:9px;z-index:2;">
+                        ▶</div>
+                    </div>
+                    <div
+                      style="flex:1.1;background:linear-gradient(180deg,#004f6b,#003345);padding:7px 2px;text-align:center;position:relative;">
+                      <div style="font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;color:#fff;">
+                        DECODE</div>
+                      <div style="font-size:10px;color:#aadeee;margin-top:1px;line-height:1.3;">8-wide<br>CISC→μop</div>
+                      <div
+                        style="position:absolute;right:-5px;top:50%;transform:translateY(-50%);color:#ffffff;font-size:9px;z-index:2;">
+                        ▶</div>
+                    </div>
+                    <div
+                      style="flex:1.15;background:linear-gradient(180deg,#5a0080,#3a0055);padding:7px 2px;text-align:center;position:relative;">
+                      <div style="font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;color:#fff;">
+                        DISPATCH</div>
+                      <div style="font-size:10px;color:#ddbbff;margin-top:1px;line-height:1.3;">Rename<br>ROB 448</div>
+                      <div
+                        style="position:absolute;right:-5px;top:50%;transform:translateY(-50%);color:#ffffff;font-size:9px;z-index:2;">
+                        ▶</div>
+                    </div>
+                    <div
+                      style="flex:0.9;background:linear-gradient(180deg,#005f44,#003d2c);padding:7px 2px;text-align:center;position:relative;">
+                      <div style="font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;color:#fff;">
+                        ISSUE</div>
+                      <div style="font-size:10px;color:#aaffdd;margin-top:1px;line-height:1.3;">Sched.<br>Queues</div>
+                      <div
+                        style="position:absolute;right:-5px;top:50%;transform:translateY(-50%);color:#ffffff;font-size:9px;z-index:2;">
+                        ▶</div>
+                    </div>
+                    <div
+                      style="flex:1.1;background:linear-gradient(180deg,#7a0020,#550015);padding:7px 2px;text-align:center;position:relative;">
+                      <div style="font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;color:#fff;">
+                        EXECUTE</div>
+                      <div style="font-size:10px;color:#ffaabb;margin-top:1px;line-height:1.3;">4×INT<br>2×FP+AGU</div>
+                      <div
+                        style="position:absolute;right:-5px;top:50%;transform:translateY(-50%);color:#ffffff;font-size:9px;z-index:2;">
+                        ▶</div>
+                    </div>
+                    <div
+                      style="flex:1;background:linear-gradient(180deg,#5a3a00,#3a2500);padding:7px 2px;text-align:center;position:relative;">
+                      <div style="font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;color:#fff;">
+                        MEM</div>
+                      <div style="font-size:10px;color:#ffe0aa;margin-top:1px;line-height:1.3;">D-Cache<br>48KB L1</div>
+                      <div
+                        style="position:absolute;right:-5px;top:50%;transform:translateY(-50%);color:#ffffff;font-size:9px;z-index:2;">
+                        ▶</div>
+                    </div>
+                    <div
+                      style="flex:0.9;background:linear-gradient(180deg,#333,#111);padding:7px 2px;text-align:center;">
+                      <div style="font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;color:#fff;">
+                        RETIRE</div>
+                      <div style="font-size:10px;color:#ccc;margin-top:1px;line-height:1.3;">In-order<br>WB</div>
+                    </div>
+                  </div>
+                  <div
+                    style="display:flex;gap:0;margin-top:2px;font-size:10px;color:#555;font-family:'JetBrains Mono',monospace;text-align:center;">
+                    <div style="flex:1;">BP+L1I<br>BTB 12K</div>
+                    <div style="flex:1.1;">μop Cache<br>4K entries</div>
+                    <div style="flex:1.15;">RAT+ROB<br>448 μops</div>
+                    <div style="flex:.9;">INT+FP<br>Sched.</div>
+                    <div style="flex:1.1;">AVX-512<br>Native</div>
+                    <div style="flex:1;">72LD<br>64ST</div>
+                    <div style="flex:.9;">8μops<br>/clk</div>
+                  </div>
+                </div>
+
+                <!-- PIPELINE TIMING DIAGRAM -->
+                <div>
+                  <div
+                    style="font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:700;color:#1a1a1a;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">
+                    5-Stage Pipeline Timing Diagram</div>
+                  <svg viewBox="0 0 540 140" width="100%" xmlns="http://www.w3.org/2000/svg"
+                    style="font-family:'JetBrains Mono',monospace;border:1.5px solid #bbb;border-radius:3px;background:#f5f6ff;">
+                    <rect x="0" y="0" width="540" height="140" fill="#f5f6ff" />
+                    <rect x="62" y="13" width="432" height="20" fill="#e8e9ff" />
+                    <rect x="62" y="55" width="432" height="20" fill="#e8e9ff" />
+                    <rect x="62" y="97" width="432" height="20" fill="#e8e9ff" />
+                    <!-- Header -->
+                    <rect x="62" y="0" width="432" height="13" fill="#1a1a1a" />
+                    <text x="110" y="10" text-anchor="middle" font-size="8.5" fill="#ccc" font-weight="700">Clk 1</text>
+                    <text x="158" y="10" text-anchor="middle" font-size="8.5" fill="#ccc" font-weight="700">Clk 2</text>
+                    <text x="206" y="10" text-anchor="middle" font-size="8.5" fill="#ccc" font-weight="700">Clk 3</text>
+                    <text x="254" y="10" text-anchor="middle" font-size="8.5" fill="#ccc" font-weight="700">Clk 4</text>
+                    <text x="302" y="10" text-anchor="middle" font-size="8.5" fill="#ccc" font-weight="700">Clk 5</text>
+                    <text x="350" y="10" text-anchor="middle" font-size="8.5" fill="#ccc" font-weight="700">Clk 6</text>
+                    <text x="398" y="10" text-anchor="middle" font-size="8.5" fill="#ccc" font-weight="700">Clk 7</text>
+                    <text x="446" y="10" text-anchor="middle" font-size="8.5" fill="#ccc" font-weight="700">Clk 8</text>
+                    <text x="486" y="10" text-anchor="middle" font-size="8.5" fill="#ccc" font-weight="700">Clk 9</text>
+                    <!-- Vertical grid -->
+                    <line x1="86" y1="13" x2="86" y2="125" stroke="#ccc" stroke-width=".5" />
+                    <line x1="134" y1="13" x2="134" y2="125" stroke="#ccc" stroke-width=".5" />
+                    <line x1="182" y1="13" x2="182" y2="125" stroke="#ccc" stroke-width=".5" />
+                    <line x1="230" y1="13" x2="230" y2="125" stroke="#ccc" stroke-width=".5" />
+                    <line x1="278" y1="13" x2="278" y2="125" stroke="#ccc" stroke-width=".5" />
+                    <line x1="326" y1="13" x2="326" y2="125" stroke="#ccc" stroke-width=".5" />
+                    <line x1="374" y1="13" x2="374" y2="125" stroke="#ccc" stroke-width=".5" />
+                    <line x1="422" y1="13" x2="422" y2="125" stroke="#ccc" stroke-width=".5" />
+                    <line x1="464" y1="13" x2="464" y2="125" stroke="#ccc" stroke-width=".5" />
+                    <!-- Row labels -->
+                    <text x="3" y="26" font-size="9.5" fill="#333" font-weight="700">Instr 1</text>
+                    <text x="3" y="48" font-size="9.5" fill="#333" font-weight="700">Instr 2</text>
+                    <text x="3" y="70" font-size="9.5" fill="#333" font-weight="700">Instr 3</text>
+                    <text x="3" y="92" font-size="9.5" fill="#333" font-weight="700">Instr 4</text>
+                    <text x="3" y="114" font-size="9.5" fill="#333" font-weight="700">Instr 5</text>
+                    <!-- I1 -->
+                    <rect x="87" y="15" width="46" height="17" rx="3" fill="#003d8a" /><text x="110" y="27"
+                      text-anchor="middle" font-size="9" fill="#fff" font-weight="700">IF</text>
+                    <rect x="135" y="15" width="46" height="17" rx="3" fill="#004f6b" /><text x="158" y="27"
+                      text-anchor="middle" font-size="9" fill="#fff" font-weight="700">ID</text>
+                    <rect x="183" y="15" width="46" height="17" rx="3" fill="#5a0080" /><text x="206" y="27"
+                      text-anchor="middle" font-size="9" fill="#fff" font-weight="700">EX</text>
+                    <rect x="231" y="15" width="46" height="17" rx="3" fill="#005f44" /><text x="254" y="27"
+                      text-anchor="middle" font-size="9" fill="#fff" font-weight="700">MEM</text>
+                    <rect x="279" y="15" width="46" height="17" rx="3" fill="#7a0020" /><text x="302" y="27"
+                      text-anchor="middle" font-size="9" fill="#fff" font-weight="700">WB</text>
+                    <!-- I2 -->
+                    <rect x="135" y="37" width="46" height="17" rx="3" fill="#003d8a" /><text x="158" y="49"
+                      text-anchor="middle" font-size="9" fill="#fff" font-weight="700">IF</text>
+                    <rect x="183" y="37" width="46" height="17" rx="3" fill="#004f6b" /><text x="206" y="49"
+                      text-anchor="middle" font-size="9" fill="#fff" font-weight="700">ID</text>
+                    <rect x="231" y="37" width="46" height="17" rx="3" fill="#5a0080" /><text x="254" y="49"
+                      text-anchor="middle" font-size="9" fill="#fff" font-weight="700">EX</text>
+                    <rect x="279" y="37" width="46" height="17" rx="3" fill="#005f44" /><text x="302" y="49"
+                      text-anchor="middle" font-size="9" fill="#fff" font-weight="700">MEM</text>
+                    <rect x="327" y="37" width="46" height="17" rx="3" fill="#7a0020" /><text x="350" y="49"
+                      text-anchor="middle" font-size="9" fill="#fff" font-weight="700">WB</text>
+                    <!-- I3 -->
+                    <rect x="183" y="59" width="46" height="17" rx="3" fill="#003d8a" /><text x="206" y="71"
+                      text-anchor="middle" font-size="9" fill="#fff" font-weight="700">IF</text>
+                    <rect x="231" y="59" width="46" height="17" rx="3" fill="#004f6b" /><text x="254" y="71"
+                      text-anchor="middle" font-size="9" fill="#fff" font-weight="700">ID</text>
+                    <rect x="279" y="59" width="46" height="17" rx="3" fill="#5a0080" /><text x="302" y="71"
+                      text-anchor="middle" font-size="9" fill="#fff" font-weight="700">EX</text>
+                    <rect x="327" y="59" width="46" height="17" rx="3" fill="#005f44" /><text x="350" y="71"
+                      text-anchor="middle" font-size="9" fill="#fff" font-weight="700">MEM</text>
+                    <rect x="375" y="59" width="46" height="17" rx="3" fill="#7a0020" /><text x="398" y="71"
+                      text-anchor="middle" font-size="9" fill="#fff" font-weight="700">WB</text>
+                    <!-- I4 -->
+                    <rect x="231" y="81" width="46" height="17" rx="3" fill="#003d8a" /><text x="254" y="93"
+                      text-anchor="middle" font-size="9" fill="#fff" font-weight="700">IF</text>
+                    <rect x="279" y="81" width="46" height="17" rx="3" fill="#004f6b" /><text x="302" y="93"
+                      text-anchor="middle" font-size="9" fill="#fff" font-weight="700">ID</text>
+                    <rect x="327" y="81" width="46" height="17" rx="3" fill="#5a0080" /><text x="350" y="93"
+                      text-anchor="middle" font-size="9" fill="#fff" font-weight="700">EX</text>
+                    <rect x="375" y="81" width="46" height="17" rx="3" fill="#005f44" /><text x="398" y="93"
+                      text-anchor="middle" font-size="9" fill="#fff" font-weight="700">MEM</text>
+                    <rect x="423" y="81" width="46" height="17" rx="3" fill="#7a0020" /><text x="446" y="93"
+                      text-anchor="middle" font-size="9" fill="#fff" font-weight="700">WB</text>
+                    <!-- I5 -->
+                    <rect x="279" y="103" width="46" height="17" rx="3" fill="#003d8a" /><text x="302" y="115"
+                      text-anchor="middle" font-size="9" fill="#fff" font-weight="700">IF</text>
+                    <rect x="327" y="103" width="46" height="17" rx="3" fill="#004f6b" /><text x="350" y="115"
+                      text-anchor="middle" font-size="9" fill="#fff" font-weight="700">ID</text>
+                    <rect x="375" y="103" width="46" height="17" rx="3" fill="#5a0080" /><text x="398" y="115"
+                      text-anchor="middle" font-size="9" fill="#fff" font-weight="700">EX</text>
+                    <rect x="423" y="103" width="46" height="17" rx="3" fill="#005f44" /><text x="446" y="115"
+                      text-anchor="middle" font-size="9" fill="#fff" font-weight="700">MEM</text>
+                    <rect x="465" y="103" width="46" height="17" rx="3" fill="#7a0020" /><text x="488" y="115"
+                      text-anchor="middle" font-size="9" fill="#fff" font-weight="700">WB</text>
+                    <!-- Legend -->
+                    <rect x="468" y="15" width="10" height="8" rx="1" fill="#003d8a" /><text x="481" y="22"
+                      font-size="7.5" fill="#333" font-weight="600">IF–Fetch</text>
+                    <rect x="468" y="26" width="10" height="8" rx="1" fill="#004f6b" /><text x="481" y="33"
+                      font-size="7.5" fill="#333" font-weight="600">ID–Decode</text>
+                    <rect x="468" y="37" width="10" height="8" rx="1" fill="#5a0080" /><text x="481" y="44"
+                      font-size="7.5" fill="#333" font-weight="600">EX–Execute</text>
+                    <rect x="468" y="48" width="10" height="8" rx="1" fill="#005f44" /><text x="481" y="55"
+                      font-size="7.5" fill="#333" font-weight="600">MEM Access</text>
+                    <rect x="468" y="59" width="10" height="8" rx="1" fill="#7a0020" /><text x="481" y="66"
+                      font-size="7.5" fill="#333" font-weight="600">WB–WriteBack</text>
+                    <!-- caption -->
+                    <text x="1" y="136" font-size="8.5" fill="#555">▲ Pipeline fills by cycle 5 — all 5 stages execute
+                      simultaneously, throughput = 1 instruction/clock cycle</text>
+                  </svg>
+                </div>
+
+                <!-- PIPELINE STAT CHIPS -->
+                <div style="display:flex;gap:4px;">
+                  <div style="flex:1;background:#003d8a;border-radius:3px;padding:5px 4px;text-align:center;">
+                    <div
+                      style="font-size:10px;color:#aad0ff;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;">
+                      Throughput</div>
+                    <div style="font-size:12px;color:#fff;font-family:'JetBrains Mono',monospace;font-weight:700;">1
+                      instr/clk</div>
+                  </div>
+                  <div style="flex:1;background:#5a0080;border-radius:3px;padding:5px 4px;text-align:center;">
+                    <div
+                      style="font-size:10px;color:#ddbbff;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;">
+                      Dispatch Width</div>
+                    <div style="font-size:12px;color:#fff;font-family:'JetBrains Mono',monospace;font-weight:700;">8
+                      μops/clk</div>
+                  </div>
+                  <div style="flex:1;background:#005f44;border-radius:3px;padding:5px 4px;text-align:center;">
+                    <div
+                      style="font-size:10px;color:#aaffdd;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;">
+                      ROB Size</div>
+                    <div style="font-size:12px;color:#fff;font-family:'JetBrains Mono',monospace;font-weight:700;">448
+                      μops</div>
+                  </div>
+                  <div style="flex:1;background:#7a0020;border-radius:3px;padding:5px 4px;text-align:center;">
+                    <div
+                      style="font-size:10px;color:#ffaabb;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;">
+                      Exec Units</div>
+                    <div style="font-size:12px;color:#fff;font-family:'JetBrains Mono',monospace;font-weight:700;">4INT
+                      + 2FP</div>
+                  </div>
+                  <div style="flex:1;background:#5a3a00;border-radius:3px;padding:5px 4px;text-align:center;">
+                    <div
+                      style="font-size:10px;color:#ffe0aa;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;">
+                      Boost Clock</div>
+                    <div style="font-size:12px;color:#fff;font-family:'JetBrains Mono',monospace;font-weight:700;">5.7
+                      GHz</div>
+                  </div>
+                  <div style="flex:1;background:#1a1a1a;border-radius:3px;padding:5px 4px;text-align:center;">
+                    <div
+                      style="font-size:10px;color:#bbb;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;">
+                      IPC Uplift</div>
+                    <div style="font-size:12px;color:#fff;font-family:'JetBrains Mono',monospace;font-weight:700;">+16%
+                      Zen4</div>
+                  </div>
+                </div>
+                <img class="cpu" src="cpu.png">
+              </div>
+
+              <!-- RIGHT: FULL HEIGHT ZEN 5 DATAPATH -->
+              <div style="flex:0.7;display:flex;flex-direction:column;height:570px;">
+                <div
+                  style="font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:700;color:#1a1a1a;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;">
+                  Zen 5 Core Datapath</div>
+                <svg viewBox="0 0 270 430" width="100%" preserveAspectRatio="none"
+                  style="flex:1;min-height:0;display:block;font-family:'JetBrains Mono',monospace;border:1.5px solid #bbb;border-radius:4px;background:linear-gradient(180deg,#f8f9ff 0%,#f0f4ff 100%);"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <marker id="da" markerWidth="7" markerHeight="6" refX="6" refY="3" orient="auto">
+                      <path d="M0,0 L7,3 L0,6 Z" fill="#444" />
+                    </marker>
+                    <marker id="db" markerWidth="7" markerHeight="6" refX="6" refY="3" orient="auto">
+                      <path d="M0,0 L7,3 L0,6 Z" fill="#0057B8" />
+                    </marker>
+                    <marker id="dc" markerWidth="7" markerHeight="6" refX="6" refY="3" orient="auto">
+                      <path d="M0,0 L7,3 L0,6 Z" fill="#ED1C24" />
+                    </marker>
+                    <marker id="dd" markerWidth="7" markerHeight="6" refX="6" refY="3" orient="auto">
+                      <path d="M0,0 L7,3 L0,6 Z" fill="#1A6B2A" />
+                    </marker>
+                    <linearGradient id="lc" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#dde8ff" />
+                      <stop offset="100%" stop-color="#c8daff" />
+                    </linearGradient>
+                  </defs>
+                  <!-- FRONT END label -->
+                  <rect x="4" y="4" width="262" height="10" rx="2" fill="#1a1a1a" />
+                  <text x="135" y="11" text-anchor="middle" font-size="7.5" fill="#FFD700" font-weight="700"
+                    letter-spacing="1">━━ FRONT END ━━</text>
+                  <!-- Branch Pred -->
+                  <rect x="148" y="16" width="115" height="24" rx="3" fill="#ffe8f0" stroke="#ED1C24"
+                    stroke-width="1.5" />
+                  <text x="205" y="25" text-anchor="middle" fill="#7a0010" font-size="8.5" font-weight="700">BRANCH
+                    PRED</text>
+                  <text x="205" y="35" text-anchor="middle" fill="#ED1C24" font-size="8">(TAGE+ · BTB 12K)</text>
+                  <!-- L1 I-Cache -->
+                  <rect x="6" y="16" width="136" height="24" rx="3" fill="#e8f0ff" stroke="#0057B8"
+                    stroke-width="1.5" />
+                  <text x="74" y="25" text-anchor="middle" fill="#003070" font-size="8.5" font-weight="700">L1 I-Cache
+                    32KB</text>
+                  <text x="74" y="35" text-anchor="middle" fill="#003070" font-size="8">8-way · 2×16B/clk fetch</text>
+                  <line x1="142" y1="28" x2="148" y2="28" stroke="#ED1C24" stroke-width="1" stroke-dasharray="3,2" />
+                  <line x1="74" y1="40" x2="74" y2="52" stroke="#444" stroke-width="1.5" marker-end="url(#da)" />
+                  <!-- Decode -->
+                  <rect x="6" y="52" width="258" height="26" rx="3" fill="#fff3e8" stroke="#E05A00"
+                    stroke-width="1.5" />
+                  <text x="135" y="63" text-anchor="middle" fill="#7a2e00" font-size="9" font-weight="700">DECODE
+                    (8-wide) + μop Cache 4K</text>
+                  <text x="135" y="73" text-anchor="middle" fill="#7a2e00" font-size="8">CISC x86 → micro-ops · 2 decode
+                    clusters</text>
+                  <line x1="135" y1="78" x2="135" y2="90" stroke="#444" stroke-width="1.5" marker-end="url(#da)" />
+                  <!-- Rename ROB -->
+                  <rect x="6" y="90" width="258" height="24" rx="3" fill="#f2ecff" stroke="#52278C"
+                    stroke-width="1.5" />
+                  <text x="135" y="101" text-anchor="middle" fill="#280050" font-size="9" font-weight="700">RENAME (RAT)
+                    + ROB (448 μops)</text>
+                  <text x="135" y="110" text-anchor="middle" fill="#52278C" font-size="8">Register rename · OoO dispatch
+                    window</text>
+                  <!-- Phys reg file -->
+                  <rect x="170" y="118" width="100" height="18" rx="3" fill="#e6fff8" stroke="#006B63"
+                    stroke-width="1.5" />
+                  <text x="220" y="127" text-anchor="middle" fill="#003830" font-size="7.5" font-weight="700">Physical
+                    Register File</text>
+                  <text x="220" y="134" text-anchor="middle" fill="#006B63" font-size="7">INT+FP (doubled in
+                    Zen5)</text>
+                  <line x1="135" y1="114" x2="135" y2="130" stroke="#444" stroke-width="1.5" marker-end="url(#da)" />
+                  <!-- Back end label -->
+                  <rect x="4" y="126" width="160" height="8" rx="1" fill="#52278C" opacity=".25" />
+                  <text x="82" y="132" text-anchor="middle" font-size="6.5" fill="#52278C" font-weight="700">━ BACK END
+                    ━</text>
+                  <!-- INT scheduler -->
+                  <rect x="6" y="136" width="120" height="20" rx="3" fill="#fff0f0" stroke="#ED1C24"
+                    stroke-width="1.5" />
+                  <text x="66" y="145" text-anchor="middle" fill="#8a0010" font-size="8.5" font-weight="700">INT
+                    Scheduler</text>
+                  <text x="66" y="153" text-anchor="middle" fill="#888" font-size="8">24-entry (×3)</text>
+                  <!-- FP scheduler -->
+                  <rect x="130" y="136" width="134" height="20" rx="3" fill="#fff8f0" stroke="#E05A00"
+                    stroke-width="1.5" />
+                  <text x="197" y="145" text-anchor="middle" fill="#7a2e00" font-size="8.5" font-weight="700">FP /
+                    AVX-512 Scheduler</text>
+                  <text x="197" y="153" text-anchor="middle" fill="#888" font-size="7.4">32-entry · 512-bit native
+                    exec</text>
+                  <!-- Arrows to exec -->
+                  <line x1="34" y1="156" x2="34" y2="168" stroke="#444" stroke-width="1.2" marker-end="url(#da)" />
+                  <line x1="88" y1="156" x2="88" y2="168" stroke="#444" stroke-width="1.2" marker-end="url(#da)" />
+                  <line x1="180" y1="156" x2="180" y2="168" stroke="#444" stroke-width="1.2" marker-end="url(#da)" />
+                  <line x1="228" y1="156" x2="228" y2="168" stroke="#444" stroke-width="1.2" marker-end="url(#da)" />
+                  <!-- Exec label -->
+                  <text x="135" y="167" text-anchor="middle" font-size="8" fill="#555" font-weight="700">━━ EXECUTION
+                    UNITS ━━</text>
+                  <!-- 4×INT ALU -->
+                  <rect x="6" y="169" width="58" height="24" rx="3" fill="#e8f0ff" stroke="#0057B8"
+                    stroke-width="1.5" />
+                  <text x="35" y="179" text-anchor="middle" fill="#003070" font-size="8.5" font-weight="700">4× INT
+                    ALU</text>
+                  <text x="35" y="189" text-anchor="middle" fill="#0057B8" font-size="8">DIV + MUL</text>
+                  <!-- 2×AGU -->
+                  <rect x="68" y="169" width="56" height="24" rx="3" fill="#edfff0" stroke="#1A6B2A"
+                    stroke-width="1.5" />
+                  <text x="96" y="179" text-anchor="middle" fill="#0a3012" font-size="8.5" font-weight="700">2×
+                    AGU</text>
+                  <text x="96" y="189" text-anchor="middle" fill="#1A6B2A" font-size="8">LD / ST</text>
+                  <!-- 2×FP -->
+                  <rect x="128" y="169" width="70" height="24" rx="3" fill="#fff3e8" stroke="#E05A00"
+                    stroke-width="1.5" />
+                  <text x="163" y="179" text-anchor="middle" fill="#7a2e00" font-size="8.5" font-weight="700">2×
+                    FP/FADD</text>
+                  <text x="163" y="189" text-anchor="middle" fill="#E05A00" font-size="8">2-cycle latency</text>
+                  <!-- 2×VMUL -->
+                  <rect x="202" y="169" width="62" height="24" rx="3" fill="#ffe8f0" stroke="#ED1C24"
+                    stroke-width="1.5" />
+                  <text x="233" y="179" text-anchor="middle" fill="#7a0010" font-size="8.5" font-weight="700">2×
+                    VMUL</text>
+                  <text x="233" y="189" text-anchor="middle" fill="#ED1C24" font-size="8">512-bit wide</text>
+                  <!-- Arrows to mem -->
+                  <line x1="35" y1="193" x2="35" y2="207" stroke="#0057B8" stroke-width="1.2" marker-end="url(#db)" />
+                  <line x1="90" y1="193" x2="90" y2="207" stroke="#1A6B2A" stroke-width="1.2" marker-end="url(#dd)" />
+                  <!-- MEM label -->
+                  <rect x="4" y="203" width="262" height="6" rx="1" fill="#0057B8" opacity=".18" />
+                  <text x="135" y="209" text-anchor="middle" font-size="8" fill="#0057B8" font-weight="700">━━ MEMORY
+                    SUBSYSTEM ━━</text>
+                  <!-- L1 D-Cache -->
+                  <rect x="6" y="212" width="76" height="28" rx="3" fill="#fff8f0" stroke="#E05A00"
+                    stroke-width="1.5" />
+                  <text x="44" y="222" text-anchor="middle" fill="#7a2e00" font-size="8.5" font-weight="700">L1
+                    D-Cache</text>
+                  <text x="44" y="231" text-anchor="middle" fill="#555" font-size="8">48KB · 12-way</text>
+                  <text x="44" y="238" text-anchor="middle" fill="#888" font-size="8">4ld+2st/clk</text>
+                  <!-- LD/ST Buffer -->
+                  <rect x="86" y="212" width="92" height="28" rx="3" fill="#f5f5f5" stroke="#666" stroke-width="1.5" />
+                  <text x="132" y="222" text-anchor="middle" fill="#333" font-size="8.5" font-weight="700">LD/ST
+                    Buffer</text>
+                  <text x="132" y="231" text-anchor="middle" fill="#555" font-size="8">72 LD + 64 ST</text>
+                  <text x="132" y="238" text-anchor="middle" fill="#888" font-size="8">OoO memory ops</text>
+                  <!-- Store Queue -->
+                  <rect x="182" y="212" width="82" height="28" rx="3" fill="#f0fff0" stroke="#1A6B2A"
+                    stroke-width="1.5" />
+                  <text x="223" y="222" text-anchor="middle" fill="#0a3012" font-size="8.5" font-weight="700">Store
+                    Queue</text>
+                  <text x="223" y="231" text-anchor="middle" fill="#555" font-size="8">64 entries</text>
+                  <text x="223" y="238" text-anchor="middle" fill="#888" font-size="8">Commit@retire</text>
+                  <!-- L2 -->
+                  <line x1="135" y1="240" x2="135" y2="253" stroke="#444" stroke-width="1.5" marker-end="url(#da)" />
+                  <rect x="6" y="253" width="258" height="22" rx="3" fill="#f0f0f0" stroke="#666" stroke-width="1.5" />
+                  <text x="135" y="263" text-anchor="middle" fill="#333" font-size="9" font-weight="700">L2 Cache —
+                    1MB/core · 16-way assoc.</text>
+                  <text x="135" y="271" text-anchor="middle" fill="#555" font-size="8">64B/clk L1↔L2 · 3.5 fewer miss
+                    cycles vs Zen4</text>
+                  <!-- L3 + V-Cache -->
+                  <line x1="135" y1="275" x2="135" y2="288" stroke="#444" stroke-width="1.5" marker-end="url(#da)" />
+                  <rect x="6" y="288" width="258" height="30" rx="3" fill="url(#lc)" stroke="#0057B8"
+                    stroke-width="2" />
+                  <text x="135" y="300" text-anchor="middle" fill="#003070" font-size="9.5" font-weight="700">L3 Cache —
+                    96MB TOTAL</text>
+                  <text x="135" y="308" text-anchor="middle" fill="#0057B8" font-size="8">32MB base + 64MB 3D V-Cache
+                    (SRAM stacked)</text>
+                  <text x="135" y="316" text-anchor="middle" fill="#555" font-size="8">World's fastest gaming L3 cache
+                    hierarchy</text>
+                  <!-- Infinity Fabric -->
+                  <line x1="135" y1="318" x2="135" y2="330" stroke="#ED1C24" stroke-width="1.5" marker-end="url(#dc)" />
+                  <rect x="6" y="330" width="258" height="20" rx="3" fill="#fff0f0" stroke="#ED1C24"
+                    stroke-width="1.5" />
+                  <text x="135" y="340" text-anchor="middle" fill="#7a0010" font-size="8.5" font-weight="700">Infinity
+                    Fabric 4.0 · FCLK ~2000 MHz</text>
+                  <text x="135" y="348" text-anchor="middle" fill="#ED1C24" font-size="8">CCD ↔ I/O Die · DDR5 Ctrl ·
+                    PCIe 5.0</text>
+                  <!-- Retire -->
+                  <line x1="135" y1="350" x2="135" y2="362" stroke="#444" stroke-width="1.5" marker-end="url(#da)" />
+                  <rect x="6" y="362" width="258" height="22" rx="3" fill="#1a1a1a" />
+                  <text x="135" y="372" text-anchor="middle" fill="#FFD700" font-size="9" font-weight="700">RETIRE —
+                    In-order commit</text>
+                  <text x="135" y="381" text-anchor="middle" fill="#bbb" font-size="8">8 μops/cycle · Precise exception
+                    support</text>
+                  <!-- Key numbers footer -->
+                  <rect x="6" y="388" width="258" height="36" rx="3" fill="#1a1a1a" stroke="#52278C"
+                    stroke-width="1.5" />
+                  <text x="135" y="397" text-anchor="middle" font-size="8" fill="#aaa" font-weight="700"
+                    letter-spacing="1">ZEN 5 KEY NUMBERS</text>
+                  <text x="40" y="408" text-anchor="middle" font-size="8" fill="#FFD700" font-weight="700">5.7
+                    GHz</text>
+                  <text x="40" y="418" text-anchor="middle" font-size="8" fill="#aaa">Boost</text>
+                  <text x="95" y="408" text-anchor="middle" font-size="8" fill="#FFD700" font-weight="700">96MB
+                    L3</text>
+                  <text x="95" y="418" text-anchor="middle" font-size="8" fill="#aaa">V-Cache</text>
+                  <text x="150" y="408" text-anchor="middle" font-size="8" fill="#FFD700" font-weight="700">+16%
+                    IPC</text>
+                  <text x="150" y="418" text-anchor="middle" font-size="8" fill="#aaa">vs Zen 4</text>
+                  <text x="210" y="408" text-anchor="middle" font-size="8" fill="#FFD700" font-weight="700">TSMC
+                    4nm</text>
+                  <text x="210" y="418" text-anchor="middle" font-size="8" fill="#aaa">8.9B Trans.</text>
+                </svg>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end col2 -->
+
+      <!-- ═══ COL 3 ═══ -->
+      <div>
+
+        <!-- FEATURES -->
+        <div class="card">
+          <div class="ch ch-red">Key Processor Features</div>
+          <div class="cb">
+            <div class="fi">
+              <div class="fi-num">1</div>
+              <div class="fi-t"><strong>3D V-Cache Technology</strong></div>
+            </div>
+            <div class="fi">
+              <div class="fi-num">2</div>
+              <div class="fi-t"><strong>Zen 5 — TSMC 4nm Process</strong>
+              </div>
+            </div>
+            <div class="fi">
+              <div class="fi-num">3</div>
+              <div class="fi-t"><strong>AVX-512 — 512-bit Native SIMD</strong>
+              </div>
+            </div>
+            <div class="fi">
+              <div class="fi-num">4</div>
+              <div class="fi-t"><strong>SMT — 8 Cores / 16 Threads</strong>
+              </div>
+            </div>
+            <div class="fi">
+              <div class="fi-num">5</div>
+              <div class="fi-t"><strong>Precision Boost Overdrive (PBO)</strong>
+              </div>
+            </div>
+            <div class="fi">
+              <div class="fi-num">6</div>
+              <div class="fi-t"><strong>PCIe 5.0 + DDR5-5600</strong>
+              </div>
+            </div>
+            <div class="fi">
+              <div class="fi-num">7</div>
+              <div class="fi-t"><strong>Infinity Fabric 4.0 Interconnect</strong>
+              </div>
+            </div>
+            <div class="fi">
+              <div class="fi-num">8</div>
+              <div class="fi-t"><strong>Out-of-Order Execution (OoO)</strong>
+              </div>
+            </div>
+            <div class="fi">
+              <div class="fi-num">9</div>
+              <div class="fi-t"><strong>SHA-512 + SME / SEV Security</strong>
+              </div>
+            </div>
+            <div class="fi" style="border-bottom:none;margin-bottom:0;padding-bottom:0;">
+              <div class="fi-num">10</div>
+              <div class="fi-t"><strong>μop Cache — 4096 Entries</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- REFERENCES -->
+        <div class="card">
+          <div class="ch ch-dark">Quality References</div>
+          <div class="cb">
+            <div class="ref"><span class="rnum">[1]</span> AMD, <em>5th Gen AMD EPYC: Processor Architecture White
+                Paper</em>, First Edition, March 2025.</div>
+
+            <div class="ref"><span class="rnum">[2]</span> AMD, <em>AMD64 Architecture Programmer’s Manual, Volume 1:
+                Application Programming</em>. amd.com</div>
+
+            <div class="ref"><span class="rnum">[3]</span> B. Munger et al., <em>Zen 5: The AMD High-Performance 4nm
+                x86-64 Microprocessor Core</em>, IEEE Conference Paper.</div>
+
+            <div class="ref"><span class="rnum">[4]</span> AMD, <em>Zen Core Architecture Overview</em>.
+              amd.com/en/technologies/zen-core.html</div>
+
+            <div style="margin-top:10px;background:#fffcfc;border-radius:3px;padding:7px 10px;">
+              <div
+                style="font-family:'Barlow Condensed',sans-serif;font-size:15px;color:#ED1C24;font-weight:800;letter-spacing:1px;margin-bottom:5px;">
+                APPLICATIONS</div>
+              <div style="display:flex;flex-wrap:wrap;gap:3px;">
+                <span
+                  style="background:#ff9999;color:#000000;font-size:13px;padding:2px 7px;border-radius:10px;font-family:'JetBrains Mono',monospace;">AAA
+                  Gaming</span>
+                <span
+                  style="background:#8ab4ff;color:#000000;font-size:13px;padding:2px 7px;border-radius:10px;font-family:'JetBrains Mono',monospace;">Video
+                  Editing</span>
+                <span
+                  style="background:#88ffcc;color:#000000;font-size:13px;padding:2px 7px;border-radius:10px;font-family:'JetBrains Mono',monospace;">3D
+                  Rendering</span>
+                <span
+                  style="background:#cc99ff;color:#000000;font-size:13px;padding:2px 7px;border-radius:10px;font-family:'JetBrains Mono',monospace;">ML
+                  / AI / VNNI</span>
+                <span
+                  style="background:#ffcc88;color:#000000;font-size:13px;padding:2px 7px;border-radius:10px;font-family:'JetBrains Mono',monospace;">Scientific
+                  HPC</span>
+                <span
+                  style="background:#cccccc;color:#000000;font-size:13px;padding:2px 7px;border-radius:10px;font-family:'JetBrains Mono',monospace;">Game
+                  Dev</span>
+              </div>
+            </div>
+            <!-- TEAM TABLE -->
+            <div style="margin-top:8px;border:2.5px solid #000;overflow:hidden;background:#fff;">
+              <div style="background:#FFE800;padding:7px 10px;text-align:center;border-bottom:2px solid #000;">
+                <div
+                  style="font-family:'Barlow Condensed',sans-serif;font-size:17px;color:#000;font-weight:700;letter-spacing:.5px;">
+                  B.Tech CSE 2024-28 Batch : Semester 4</div>
+              </div>
+              <div style="padding:4px 10px;text-align:center;border-bottom:1.5px solid #000;background:#fff;">
+                <div style="font-family:'Barlow',sans-serif;font-size:12px;color:#000;font-weight:700;">23CSE213
+                  Computer Organization and Architecture</div>
+              </div>
+              <div style="padding:4px 10px;border-bottom:1.5px solid #000;background:#fff;">
+                <span style="font-family:'Barlow',sans-serif;font-size:13px;color:#000;font-weight:700;">Team No : C
+                  15</span>
+              </div>
+              <table style="width:100%;border-collapse:collapse;">
+                <thead>
+                  <tr>
+                    <th
+                      style="background:#fff;color:#000;padding:4px 10px;font-family:'Barlow',sans-serif;font-size:12px;font-weight:700;text-align:center;border-bottom:1.5px solid #000;border-right:1.5px solid #000;">
+                      Roll No</th>
+                    <th
+                      style="background:#fff;color:#000;padding:4px 10px;font-family:'Barlow',sans-serif;font-size:12px;font-weight:700;text-align:center;border-bottom:1.5px solid #000;">
+                      Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td
+                      style="padding:4px 10px;border-bottom:1px solid #000;border-right:1.5px solid #000;font-family:'JetBrains Mono',monospace;font-size:11px;text-align:center;">
+                      CB.SC.U4CSE24263</td>
+                    <td
+                      style="padding:4px 10px;border-bottom:1px solid #000;font-size:11.5px;font-weight:700;text-align:center;">
+                      Mohith</td>
+                  </tr>
+                  <tr style="background:#ffffff;">
+                    <td
+                      style="padding:4px 10px;border-bottom:1px solid #000;border-right:1.5px solid #000;font-family:'JetBrains Mono',monospace;font-size:11px;text-align:center;">
+                      CB.SC.U4CSE24264</td>
+                    <td
+                      style="padding:4px 10px;border-bottom:1px solid #000;font-size:11.5px;font-weight:700;text-align:center;">
+                      Naveen SS</td>
+                  </tr>
+                  <tr>
+                    <td
+                      style="padding:4px 10px;border-bottom:1px solid #000;border-right:1.5px solid #000;font-family:'JetBrains Mono',monospace;font-size:11px;text-align:center;">
+                      CB.SC.U4CSE24265</td>
+                    <td
+                      style="padding:4px 10px;border-bottom:1px solid #000;font-size:11.5px;font-weight:700;text-align:center;">
+                      Vignesh</td>
+                  </tr>
+                  <tr style="background:#ffffff;">
+                    <td
+                      style="padding:4px 10px;border-bottom:1px solid #000;border-right:1.5px solid #000;font-family:'JetBrains Mono',monospace;font-size:11px;text-align:center;">
+                      CB.SC.U4CSE24266</td>
+                    <td
+                      style="padding:4px 10px;border-bottom:1px solid #000;font-size:11.5px;font-weight:700;text-align:center;">
+                      Sai Krishna</td>
+                  </tr>
+                  <tr>
+                    <td
+                      style="padding:4px 10px;border-right:1.5px solid #000;font-family:'JetBrains Mono',monospace;font-size:11px;text-align:center;">
+                      CB.SC.U4CSE24268</td>
+                    <td style="padding:4px 10px;font-size:11.5px;font-weight:700;text-align:center;">Bhargav Sri Sai
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end col3 -->
+    </div><!-- end body -->
+  </div>
+</body>
+
+</html>
