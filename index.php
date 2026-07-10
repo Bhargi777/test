@@ -31,17 +31,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["toggle"])) {
         // they were absent, clicking again means "actually they're here" -> remove the row
         $stmt = $conn->prepare("DELETE FROM attendance WHERE att_date = ? AND seat_no = ?");
         $stmt->bind_param("si", $today, $seat_no);
+        $new_status = "present";
     } else {
         // they were present (no row), clicking marks them absent -> add a row
         $stmt = $conn->prepare("INSERT INTO attendance (att_date, seat_no) VALUES (?, ?)");
         $stmt->bind_param("si", $today, $seat_no);
+        $new_status = "absent";
     }
     $stmt->execute();
     $stmt->close();
 
-    // send the browser back to this same page (this clears the POST data,
-    // so refreshing the page afterwards won't toggle the seat again)
-    header("Location: index.php" . (isset($_GET["swap"]) ? "?swap=1" : ""));
+    // was the board swapped when the click happened? carry that + the seat
+    // we just changed through the redirect so the popup can show it
+    $swap_param = (isset($_GET["swap"]) && $_GET["swap"] == "1") ? "swap=1&" : "";
+    header("Location: index.php?" . $swap_param . "last=" . $seat_no . "&status=" . $new_status);
     exit;
 }
 
@@ -52,12 +55,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["clear_today"])) {
     $stmt->execute();
     $stmt->close();
 
-    header("Location: index.php" . (isset($_GET["swap"]) ? "?swap=1" : ""));
+    $swap_param = (isset($_GET["swap"]) && $_GET["swap"] == "1") ? "?swap=1" : "";
+    header("Location: index.php" . $swap_param);
     exit;
 }
 
 // ?swap=1 in the URL flips which column is on the left/right
-$swap = isset($_GET["swap"]);
+// (has to check the actual value, not just isset - "swap=0" is still "set")
+$swap = isset($_GET["swap"]) && $_GET["swap"] == "1";
 
 // ---------------------------------------------------------
 // STEP 2: load data we need to draw the page
@@ -82,6 +87,20 @@ while ($row = $result->fetch_assoc()) {
     $absent_today[$seat_no] = true;
 }
 $stmt->close();
+
+// if we just came from a toggle (see the redirect above), build the
+// bottom popup text: "12 -> Rahul Sharma : marked absent"
+$popup_text = "";
+if (isset($_GET["last"]) && isset($_GET["status"])) {
+    $last_seat = (int) $_GET["last"];
+    $last_status = $_GET["status"] == "absent" ? "absent" : "present";
+    if (isset($students[$last_seat])) {
+        $last_name = $students[$last_seat]["name"];
+    } else {
+        $last_name = "Unknown";
+    }
+    $popup_text = $last_seat . " -> " . $last_name . " : marked " . $last_status;
+}
 
 // ---------------------------------------------------------
 // STEP 3: the seating chart layout
@@ -202,6 +221,7 @@ function draw_column($column, $absent_today, $students) {
     <div class="actions">
         <a class="btn" href="index.php?swap=<?php echo $swap ? '0' : '1'; ?>">Swap sides</a>
         <a class="btn" href="report.php">View report</a>
+        <a class="btn" href="copy_report.php">Copy report</a>
         <form method="post" style="display:inline">
             <button type="submit" name="clear_today" class="btn btn-outline">Clear today</button>
         </form>
@@ -218,6 +238,10 @@ function draw_column($column, $absent_today, $students) {
     </div>
 
     <p class="hint">Click a seat number to mark absent / present. Hover a seat to see the name.</p>
+
+    <?php if ($popup_text != ""): ?>
+        <div class="popup"><?php echo htmlspecialchars($popup_text); ?></div>
+    <?php endif; ?>
 
 </div>
 </body>

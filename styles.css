@@ -1,4 +1,4 @@
-/* styles.css - all the visual styling for index.php and report.php */
+/* styles.css - all the visual styling for index.php, report.php, copy_report.php */
 
 * {
     box-sizing: border-box; /* makes width/height include padding+border, easier to size things */
@@ -6,10 +6,10 @@
 
 body {
     margin: 0;
-    padding: 24px 16px 60px;
-    background: #f6f5f1;
-    color: #1c1c1c;
-    font-family: Georgia, "Times New Roman", serif;
+    padding: 24px 16px 80px;
+    background: #000;
+    color: #eaeaea;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.4;
 }
@@ -25,7 +25,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    border-bottom: 2px solid #1c1c1c;
+    border-bottom: 1px solid #444;
     padding-bottom: 10px;
     margin-bottom: 20px;
     flex-wrap: wrap;
@@ -35,13 +35,12 @@ body {
 .topbar h1 {
     font-size: 22px;
     margin: 0;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .topbar .date {
-    font-family: "Courier New", monospace;
     font-size: 14px;
-    color: #555;
+    color: #999;
 }
 
 /* Counts */
@@ -54,8 +53,8 @@ body {
 
 .count-box {
     flex: 1;
-    border: 1px solid #ccc8bd;
-    background: #fff;
+    border: 1px solid #444;
+    background: #111;
     text-align: center;
     padding: 10px 6px;
 }
@@ -63,34 +62,34 @@ body {
 .count-num {
     display: block;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .count-tag {
     display: block;
     font-size: 12px;
     text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: #666;
+    letter-spacing: 0.05em;
+    color: #999;
 }
 
 /* Progress bar */
 
 .bar-track {
     height: 10px;
-    background: #e4e1d8;
-    border: 1px solid #ccc8bd;
+    background: #222;
+    border: 1px solid #444;
 }
 
 .bar-fill {
     height: 100%;
-    background: #4c7a4c;
+    background: #2ecc40;
 }
 
 .bar-pct {
     margin: 4px 0 18px;
     font-size: 13px;
-    color: #555;
+    color: #999;
     text-align: right;
 }
 
@@ -106,9 +105,9 @@ body {
 .btn {
     display: inline-block;
     padding: 7px 14px;
-    background: #1c1c1c;
-    color: #fff;
-    border: 1px solid #1c1c1c;
+    background: #eaeaea;
+    color: #000;
+    border: 1px solid #eaeaea;
     text-decoration: none;
     font-size: 14px;
     font-family: inherit;
@@ -116,12 +115,12 @@ body {
 }
 
 .btn-outline {
-    background: #fff;
-    color: #1c1c1c;
+    background: #000;
+    color: #eaeaea;
 }
 
 .btn:hover {
-    opacity: 0.85;
+    opacity: 0.8;
 }
 
 /* Seating board */
@@ -142,7 +141,7 @@ body {
 
 .divider {
     width: 1px;
-    background: #ccc8bd;
+    background: #444;
     align-self: stretch;
 }
 
@@ -165,37 +164,52 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: 2px solid #4c7a4c;
-    background: #fff;
-    color: #1c1c1c;
-    font-family: "Courier New", monospace;
+    border: 2px solid #2ecc40;
+    background: #000;
+    color: #2ecc40;
     font-size: 13px;
-    font-weight: 700;
+    font-weight: bold;
     cursor: pointer;
     padding: 0;
 }
 
 .seat-btn:hover {
-    background: #eef3ee;
+    background: #0d1f0d;
 }
 
 .seat-btn.absent {
-    border-color: #a33d3d;
-    background: #a33d3d;
-    color: #fff;
+    border-color: #ff4136;
+    background: #ff4136;
+    color: #000;
 }
 
 .seat-btn.absent:hover {
-    background: #8f3434;
+    background: #d93128;
 }
 
 .hint {
     text-align: center;
-    color: #777;
+    color: #888;
     font-size: 13px;
 }
 
-/* Report page */
+/* Bottom popup - shows who was just toggled */
+
+.popup {
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    background: #eaeaea;
+    color: #000;
+    padding: 10px 18px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Report / copy report pages */
 
 .date-form {
     display: flex;
@@ -206,12 +220,14 @@ body {
 
 .date-form input {
     padding: 5px 8px;
-    border: 1px solid #ccc8bd;
+    background: #111;
+    color: #eaeaea;
+    border: 1px solid #444;
     font-family: inherit;
 }
 
 .summary {
-    color: #444;
+    color: #aaa;
     margin-bottom: 18px;
 }
 
@@ -224,15 +240,15 @@ body {
 .list-card {
     flex: 1;
     min-width: 240px;
-    border: 1px solid #ccc8bd;
-    background: #fff;
+    border: 1px solid #444;
+    background: #111;
     padding: 14px 16px;
 }
 
 .list-card h2 {
     font-size: 16px;
     margin: 0 0 8px;
-    border-bottom: 1px solid #ccc8bd;
+    border-bottom: 1px solid #444;
     padding-bottom: 6px;
 }
 
@@ -247,9 +263,20 @@ body {
 }
 
 .list-card li.empty {
-    color: #999;
+    color: #777;
     list-style: none;
     margin-left: -20px;
+}
+
+.list-card textarea {
+    width: 100%;
+    background: #000;
+    color: #2ecc40;
+    border: 1px solid #444;
+    font-family: monospace;
+    font-size: 13px;
+    padding: 8px;
+    resize: vertical;
 }
 
 @media (max-width: 480px) {
@@ -260,6 +287,6 @@ body {
 }
 
 @media print {
-    .topbar a, .date-form, .actions { display: none; }
-    body { background: #fff; }
+    .topbar a, .date-form, .actions, .popup { display: none; }
+    body { background: #fff; color: #000; }
 }
