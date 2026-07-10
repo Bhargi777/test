@@ -1,0 +1,265 @@
+/* styles.css - all the visual styling for index.php and report.php */
+
+* {
+    box-sizing: border-box; /* makes width/height include padding+border, easier to size things */
+}
+
+body {
+    margin: 0;
+    padding: 24px 16px 60px;
+    background: #f6f5f1;
+    color: #1c1c1c;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.page {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 2px solid #1c1c1c;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.topbar h1 {
+    font-size: 22px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.topbar .date {
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Counts */
+
+.counts {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.count-box {
+    flex: 1;
+    border: 1px solid #ccc8bd;
+    background: #fff;
+    text-align: center;
+    padding: 10px 6px;
+}
+
+.count-num {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.count-tag {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #666;
+}
+
+/* Progress bar */
+
+.bar-track {
+    height: 10px;
+    background: #e4e1d8;
+    border: 1px solid #ccc8bd;
+}
+
+.bar-fill {
+    height: 100%;
+    background: #4c7a4c;
+}
+
+.bar-pct {
+    margin: 4px 0 18px;
+    font-size: 13px;
+    color: #555;
+    text-align: right;
+}
+
+/* Actions */
+
+.actions {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 22px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 7px 14px;
+    background: #1c1c1c;
+    color: #fff;
+    border: 1px solid #1c1c1c;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.btn-outline {
+    background: #fff;
+    color: #1c1c1c;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+/* Seating board */
+
+.board {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.divider {
+    width: 1px;
+    background: #ccc8bd;
+    align-self: stretch;
+}
+
+.seat-row {
+    display: flex;
+    gap: 6px;
+}
+
+.seat, .empty-seat {
+    width: 42px;
+    height: 42px;
+}
+
+.seat form {
+    margin: 0;
+    height: 100%;
+}
+
+.seat-btn {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #4c7a4c;
+    background: #fff;
+    color: #1c1c1c;
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0;
+}
+
+.seat-btn:hover {
+    background: #eef3ee;
+}
+
+.seat-btn.absent {
+    border-color: #a33d3d;
+    background: #a33d3d;
+    color: #fff;
+}
+
+.seat-btn.absent:hover {
+    background: #8f3434;
+}
+
+.hint {
+    text-align: center;
+    color: #777;
+    font-size: 13px;
+}
+
+/* Report page */
+
+.date-form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 16px 0;
+}
+
+.date-form input {
+    padding: 5px 8px;
+    border: 1px solid #ccc8bd;
+    font-family: inherit;
+}
+
+.summary {
+    color: #444;
+    margin-bottom: 18px;
+}
+
+.report-lists {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.list-card {
+    flex: 1;
+    min-width: 240px;
+    border: 1px solid #ccc8bd;
+    background: #fff;
+    padding: 14px 16px;
+}
+
+.list-card h2 {
+    font-size: 16px;
+    margin: 0 0 8px;
+    border-bottom: 1px solid #ccc8bd;
+    padding-bottom: 6px;
+}
+
+.list-card ol {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.list-card li {
+    margin-bottom: 3px;
+}
+
+.list-card li.empty {
+    color: #999;
+    list-style: none;
+    margin-left: -20px;
+}
+
+@media (max-width: 480px) {
+    .seat, .empty-seat { width: 34px; height: 34px; }
+    .seat-btn { font-size: 11px; }
+    .board { gap: 12px; }
+    .seat-row { gap: 4px; }
+}
+
+@media print {
+    .topbar a, .date-form, .actions { display: none; }
+    body { background: #fff; }
+}
