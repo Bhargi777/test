@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "t8PpjU00fp1grz/I9kfbo93S3FpZO8MF218P81965ZoRoosUsKZ4XoRCgyO4ZXdcTUBzhF5cWy7VxmXMABXP3Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sanath kumar\\OneDrive\\Desktop\\indian-police-efir-portal\\webserver\\webserver.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sanath kumar\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.13\\microsoft.windowsdesktop.app.ref.6.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}
