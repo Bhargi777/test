@@ -1,8 +1,8 @@
-# Indian Police E-FIR Citizen Portal Prototype
+# Indian Police e-FIR Citizen Portal Prototype
 
 A modern, responsive, and accessible citizen-facing police portal prototype inspired by Indian public-service portals, featuring:
 
-> **Bilingual E-FIR + Digital Identity Verification (Simulated DigiLocker) + Electronic Signature (Simulated OTP E-Sign) + Police Scrutiny Desk**
+> **Bilingual e-FIR + Digital Identity Verification (Simulated DigiLocker) + Electronic Signature (Simulated OTP E-Sign) + Police Scrutiny Desk**
 
 ---
 
@@ -34,7 +34,7 @@ The portal addresses the primary friction points of traditional physical police 
 - **🔐 Simulated DigiLocker Identity Verification**: Realistic consent workflow, attribute tokenization, and transaction reference generation.
 - **🖋️ Simulated Electronic Signature**: Mobile/Aadhaar OTP verification with SHA-256 cryptographic certificate generation.
 - **🖨️ Official Printable Documents**:
-  - Formatted **E-FIR Digital Authentication Acknowledgement Receipt** with QR placeholder and statutory legal disclaimers.
+  - Formatted **e-FIR Digital Authentication Acknowledgement Receipt** with QR placeholder and statutory legal disclaimers.
   - Formatted **Police First Information Report (FIR Form No. 24)** with SHO approval seal.
 - **👮 Dedicated Police Officer Portal**:
   - Station House Officer (SHO) & Investigating Officer (IO) scrutiny desk.
@@ -70,18 +70,18 @@ This starts a lightweight HTTP server on `http://localhost:8080/` and opens your
 
 1. **Homepage**: Observe the top emergency banner (112, 1930, 1091), the 4-stage concept cards, and toggle **हिन्दी** in the header.
 2. **Citizen Login**: Click **Switch** in the top-right header to switch between sample demo citizens (*Rajesh Sharma*, *Priya Patel*, *Sanath Kumar*).
-3. **Register E-FIR**:
+3. **Register e-FIR**:
    - Step 1: Confirm informant details and select **Statement Language**.
    - Step 2: Choose incident date, location, station (*Central Police Station*), and offence category (*Theft / Snatching*).
    - Step 3: Type or review statement and test the **"Read Aloud"** button.
    - Step 4: Click sample proof buttons (e.g. `+ Purchase Invoice Bill.pdf`).
    - Step 5: Review all sections and check the confirmation box.
 4. **E-Verification (DigiLocker)**: Click **"Verify with DigiLocker"** → Review consent → Click **"Give Consent & Verify"** → Watch simulated verification → Click **"Continue to E-Signature"**.
-5. **E-Signature**: Review final statement → Check declaration → Click **"Proceed to E-Sign"** → Click **"Auto-fill Demo OTP (123456)"** → Click **"Verify & Sign"** → Click **"Complete E-FIR Authentication"**.
+5. **E-Signature**: Review final statement → Check declaration → Click **"Proceed to E-Sign"** → Click **"Auto-fill Demo OTP (123456)"** → Click **"Verify & Sign"** → Click **"Complete e-FIR Authentication"**.
 6. **Authentication Page**: View generated reference (e.g. `EFIR/2026/000124`) and click **"Download Acknowledgement"** to view and print the official receipt.
-7. **Track E-FIR**: Navigate to **Track E-FIR** to view the live progress timeline.
+7. **Track e-FIR**: Navigate to **Track e-FIR** to view the live progress timeline.
 8. **Police Officer Portal**: Click **"Officer Portal"** in the top header or navigation bar:
-   - View the new E-FIR in the scrutiny queue.
+   - View the new e-FIR in the scrutiny queue.
    - Click **"Scrutinize"** to review verified identity tokens and audit trails.
    - Test **"Request Additional Information"** or **"Proceed for FIR Registration"**.
    - Switch back to Citizen view to see the live status update!

@@ -1,6 +1,6 @@
 /**
- * Indian Police E-FIR Citizen Portal
- * Multi-Step E-FIR Registration Wizard (Steps 1 to 5 + Drafts + File Uploads)
+ * Indian Police e-FIR Citizen Portal
+ * Multi-Step e-FIR Registration Wizard (Steps 1 to 5 + Drafts + File Uploads)
  */
 
 (function() {
@@ -361,7 +361,7 @@
     goToStep(1);
   }
 
-  // Get finalized E-FIR payload for verification and submission
+  // Get finalized e-FIR payload for verification and submission
   function getCompletedPayload() {
     syncFormToState();
     return {

@@ -1,5 +1,5 @@
 /**
- * Indian Police E-FIR Citizen Portal
+ * Indian Police e-FIR Citizen Portal
  * State Management & LocalStorage Persistence (Store)
  */
 
@@ -114,7 +114,7 @@
     }
   ];
 
-  // Initial Sample E-FIRs with various lifecycles
+  // Initial Sample e-FIRs with various lifecycles
   const DEFAULT_EFIRS = [
     {
       id: "EFIR/2026/000123",
@@ -167,10 +167,10 @@
         certHash: "SHA256:8f4c9a01e3b52d88194fbc67104d9c72e45a0b93"
       },
       auditTrail: [
-        { time: "2026-08-22 10:15:00", action: "E-FIR Form Draft Created", actor: "Citizen (Rajesh Sharma)", ref: "DRAFT/2026/00012" },
+        { time: "2026-08-22 10:15:00", action: "e-FIR Form Draft Created", actor: "Citizen (Rajesh Sharma)", ref: "DRAFT/2026/00012" },
         { time: "2026-08-22 10:22:15", action: "DigiLocker Identity Verified", actor: "Simulated DigiLocker", ref: "DL-VER-2026-883921" },
         { time: "2026-08-22 10:24:40", action: "Electronic Signature Verified via OTP", actor: "Simulated e-Sign Service", ref: "ESIGN-2026-994012" },
-        { time: "2026-08-22 10:25:00", action: "Digital Authentication Completed & Transmitted", actor: "E-FIR Portal Engine", ref: "EFIR/2026/000123" },
+        { time: "2026-08-22 10:25:00", action: "Digital Authentication Completed & Transmitted", actor: "e-FIR Portal Engine", ref: "EFIR/2026/000123" },
         { time: "2026-08-22 11:30:00", action: "Assigned to IO Inspector Vikram Rathore for Scrutiny", actor: "Police Station Central", ref: "DESK-SCRUTINY-01" }
       ],
       officerNotes: "Preliminary inquiry initiated. CCTV footage from DMRC Metro Exit Gate 2 requested. Mobile IMEI placed under surveillance with Telecom CEIR portal."
@@ -225,10 +225,10 @@
         certHash: "SHA256:7c2e8a19b0d4f391884cae65201d8b61f34b9c10"
       },
       auditTrail: [
-        { time: "2026-08-20 14:30:00", action: "E-FIR Form Draft Created", actor: "Citizen (Priya Patel)", ref: "DRAFT/2026/00009" },
+        { time: "2026-08-20 14:30:00", action: "e-FIR Form Draft Created", actor: "Citizen (Priya Patel)", ref: "DRAFT/2026/00009" },
         { time: "2026-08-20 14:38:10", action: "DigiLocker Identity Verified", actor: "Simulated DigiLocker", ref: "DL-VER-2026-771829" },
         { time: "2026-08-20 14:40:55", action: "Electronic Signature Verified", actor: "Simulated e-Sign Service", ref: "ESIGN-2026-881920" },
-        { time: "2026-08-20 14:42:00", action: "Digital Authentication Completed", actor: "E-FIR Portal Engine", ref: "EFIR/2026/000098" },
+        { time: "2026-08-20 14:42:00", action: "Digital Authentication Completed", actor: "e-FIR Portal Engine", ref: "EFIR/2026/000098" },
         { time: "2026-08-21 09:15:00", action: "Additional Information Requested by Cyber Cell IO", actor: "Inspector Anjali Deshmukh", ref: "REQ-INFO-2026-04" }
       ],
       additionalInfoRequest: {
@@ -300,10 +300,10 @@
         shoRemarks: "Cognizable offence under BNSS Sec 303(2) established on preliminary scrutiny of RC and parking area logs. Formal FIR registered. Auto-theft squad alerted across toll barriers."
       },
       auditTrail: [
-        { time: "2026-08-15 09:00:00", action: "E-FIR Form Submitted", actor: "Citizen (Sanath Kumar)", ref: "DRAFT/2026/00004" },
+        { time: "2026-08-15 09:00:00", action: "e-FIR Form Submitted", actor: "Citizen (Sanath Kumar)", ref: "DRAFT/2026/00004" },
         { time: "2026-08-15 09:12:00", action: "DigiLocker Identity Verified", actor: "Simulated DigiLocker", ref: "DL-VER-2026-664819" },
         { time: "2026-08-15 09:15:30", action: "E-Signature Completed", actor: "Simulated e-Sign", ref: "ESIGN-2026-773812" },
-        { time: "2026-08-15 09:16:00", action: "Digital Authentication Completed", actor: "E-FIR Portal Engine", ref: "EFIR/2026/000075" },
+        { time: "2026-08-15 09:16:00", action: "Digital Authentication Completed", actor: "e-FIR Portal Engine", ref: "EFIR/2026/000075" },
         { time: "2026-08-16 16:00:00", action: "Formal FIR Registered by SHO", actor: "Inspector Manoj Kumar Meena (SHO)", ref: "FIR/SOUTH/2026/0412" }
       ],
       officerNotes: "Formal FIR registered. Case assigned to SI Arvind Rawat. Vehicle details broadcasted on CCTNS stolen vehicle portal."
@@ -349,15 +349,15 @@
   // Initial FAQs in English and Hindi
   const DEFAULT_FAQS = [
     {
-      qEn: "What is an E-FIR?",
+      qEn: "What is an e-FIR?",
       qHi: "ई-एफआईआर क्या है?",
-      aEn: "An E-FIR (Electronic First Information Report) is a digital method for citizens to report non-cognizable complaints, lost property, and specified cognizable offences online without immediately visiting a police station in person.",
+      aEn: "An e-FIR (Electronic First Information Report) is a digital method for citizens to report non-cognizable complaints, lost property, and specified cognizable offences online without immediately visiting a police station in person.",
       aHi: "ई-एफआईआर (इलेक्ट्रॉनिक प्रथम सूचना रिपोर्ट) नागरिकों के लिए गैर-संज्ञेय शिकायतों, खोई हुई वस्तुओं और निर्दिष्ट अपराधों की ऑनलाइन रिपोर्ट दर्ज करने का एक डिजिटल माध्यम है, जिससे थाने जाने की आवश्यकता नहीं होती।"
     },
     {
-      qEn: "Who can submit an E-FIR?",
+      qEn: "Who can submit an e-FIR?",
       qHi: "ई-एफआईआर कौन दर्ज कर सकता है?",
-      aEn: "Any citizen who is a victim, eyewitness, or authorized representative can submit an E-FIR by verifying their identity through DigiLocker and completing the simulated OTP e-signature.",
+      aEn: "Any citizen who is a victim, eyewitness, or authorized representative can submit an e-FIR by verifying their identity through DigiLocker and completing the simulated OTP e-signature.",
       aHi: "कोई भी नागरिक जो पीड़ित, प्रत्यक्षदर्शी या अधिकृत प्रतिनिधि है, डिजिलॉकर के माध्यम से अपनी पहचान सत्यापित करके और ओटीपी ई-हस्ताक्षर पूरा करके ई-एफआईआर दर्ज कर सकता है।"
     },
     {
@@ -391,9 +391,9 @@
       aHi: "डिजिटल रूप से सत्यापित शिकायतों (जैसे खोया सामान, ऑनलाइन धोखाधड़ी) के लिए पहचान सत्यापन हेतु थाने जाने की आवश्यकता नहीं है। हालांकि, गंभीर अपराधों में जांच अधिकारी आवश्यकतानुसार संपर्क कर सकते हैं।"
     },
     {
-      qEn: "How do I track my E-FIR?",
+      qEn: "How do I track my e-FIR?",
       qHi: "मैं अपनी ई-एफआईआर को कैसे ट्रैक करूँ?",
-      aEn: "Click on 'Track E-FIR' in the navigation bar, enter your generated reference number (e.g. EFIR/2026/000123), and view the step-by-step progress timeline and officer remarks in real time.",
+      aEn: "Click on 'Track e-FIR' in the navigation bar, enter your generated reference number (e.g. EFIR/2026/000123), and view the step-by-step progress timeline and officer remarks in real time.",
       aHi: "नेविगेशन बार में 'ई-एफआईआर ट्रैक करें' पर क्लिक करें, अपनी संदर्भ संख्या (उदा. EFIR/2026/000123) दर्ज करें और वास्तविक समय में प्रगति और अधिकारी की टिप्पणी देखें।"
     },
     {
@@ -516,7 +516,7 @@
       saveToStorage("active_portal", portal === "police" ? "police" : "citizen");
     },
 
-    // E-FIR CRUD
+    // e-FIR CRUD
     getEfirs() {
       return getFromStorage("efirs", DEFAULT_EFIRS);
     },

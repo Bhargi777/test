@@ -1,5 +1,5 @@
 /**
- * Indian Police E-FIR Citizen Portal
+ * Indian Police e-FIR Citizen Portal
  * Complete Bilingual Translation Dictionary (English & हिन्दी)
  */
 
@@ -8,14 +8,14 @@ const TRANSLATIONS = {
     // Top Bar & Header
     govTitle: "Mumbai Police Citizen Services",
     govSubtitle: "Government of India • Ministry of Home Affairs Model Initiative",
-    portalName: "E-FIR Citizen Portal",
+    portalName: "e-FIR Citizen Portal",
     emergencyHelpline: "Emergency: 112 | Cybercrime: 1930 | Women: 1091",
     tagline: "Secure • Transparent • Paperless • Citizen-Centric",
     
     // Navigation
     navHome: "Home",
-    navRegisterEfir: "Register E-FIR",
-    navTrackEfir: "Track E-FIR",
+    navRegisterEfir: "Register e-FIR",
+    navTrackEfir: "Track e-FIR",
     navViewFir: "View FIR",
     navDirectory: "Police Station Directory",
     navFaq: "Help & FAQs",
@@ -38,14 +38,14 @@ const TRANSLATIONS = {
     
     // Hero Section
     heroTitle: "Report. Verify. Sign. Track.",
-    heroSubtitle: "Submit your complaint electronically and securely authenticate your E-FIR without unnecessary physical visits for authentication.",
-    btnRegisterEfir: "Register E-FIR",
-    btnTrackEfir: "Track E-FIR",
+    heroSubtitle: "Submit your complaint electronically and securely authenticate your e-FIR without unnecessary physical visits for authentication.",
+    btnRegisterEfir: "Register e-FIR",
+    btnTrackEfir: "Track e-FIR",
     btnPoliceLogin: "Officer Access",
     heroNotice: "Official Prototype • Instant digital identity verification via simulated DigiLocker and OTP e-Sign.",
     
     // 4-Stage Concept
-    conceptTitle: "How Digital E-FIR Authentication Works",
+    conceptTitle: "How Digital e-FIR Authentication Works",
     conceptSubtitle: "Four simple stages to register and digitally authenticate your complaint securely from anywhere.",
     stage1Title: "1. Submit",
     stage1Desc: "Fill informant, incident details, and detailed statement in your preferred language.",
@@ -61,10 +61,10 @@ const TRANSLATIONS = {
 
     // Home Service Cards
     servicesTitle: "Citizen Police Services",
-    cardRegisterTitle: "Register New E-FIR",
+    cardRegisterTitle: "Register New e-FIR",
     cardRegisterDesc: "File non-cognizable and specified cognizable complaints with digital verification.",
-    cardTrackTitle: "Track E-FIR Status",
-    cardTrackDesc: "Check real-time scrutiny status, officer updates, and registration progress.",
+    cardTrackTitle: "Track e-FIR Status",
+    cardTrackDesc: "Receive an authenticated reference number instantly and track the status of your e-FIR",
     cardViewFirTitle: "View / Download FIR",
     cardViewFirDesc: "Access officially registered FIR copies with digital police verification stamp.",
     cardDirectoryTitle: "Station Directory",
@@ -78,7 +78,7 @@ const TRANSLATIONS = {
     loginTitle: "Citizen Login",
     loginSubtitle: "Sign in with your registered mobile number and simulated OTP.",
     regTitle: "Citizen Registration",
-    regSubtitle: "Register to submit E-FIRs and track police department responses.",
+    regSubtitle: "Register to submit e-FIRs and track police department responses.",
     fullName: "Full Name (as per ID)",
     mobileNumber: "Mobile Number",
     emailAddress: "Email Address",
@@ -99,12 +99,12 @@ const TRANSLATIONS = {
     welcome: "Welcome",
     citizenDashboard: "Citizen Services Dashboard",
     quickActions: "Quick Actions",
-    myEfirs: "My E-FIR Submissions",
+    myEfirs: "My e-FIR Submissions",
     myDrafts: "Saved Drafts",
     notifications: "Notifications",
-    noEfirsFound: "No E-FIRs submitted yet. Click 'Register E-FIR' to begin.",
+    noEfirsFound: "No e-FIRs submitted yet. Click 'Register e-FIR' to begin.",
     noDraftsFound: "No saved drafts found.",
-    colRefNo: "E-FIR Reference",
+    colRefNo: "e-FIR Reference",
     colDate: "Submission Date",
     colStation: "Police Station",
     colOffence: "Offence Category",
@@ -117,8 +117,8 @@ const TRANSLATIONS = {
     btnDeleteDraft: "Delete",
     btnDownloadAck: "Download Ack",
 
-    // Multi-Step E-FIR Wizard
-    wizardTitle: "Register New E-FIR",
+    // Multi-Step e-FIR Wizard
+    wizardTitle: "Register New e-FIR",
     wizardSubtitle: "Complete the 5 steps below to submit your complaint for digital verification.",
     step1: "1. Informant Details",
     step2: "2. Incident Details",
@@ -194,16 +194,16 @@ const TRANSLATIONS = {
 
     // E-Verification (DigiLocker Simulation)
     eVerifTitle: "Digital Identity Verification",
-    eVerifSubtitle: "Verify your identity to digitally authenticate your E-FIR.",
+    eVerifSubtitle: "Verify your identity to digitally authenticate your e-FIR.",
     eVerifExplain: "Your identity can be verified through an authorised DigiLocker verification process before you electronically sign your submission.",
     btnVerifyWithDigilocker: "Verify with DigiLocker",
     simulatedTag: "Prototype / Simulated Verification",
     digiLockerHeader: "DigiLocker Digital Identity Gateway",
     digiConsentTitle: "Consent to Identity Verification",
     digiInfoRequested: "Information Requested: Full Name, Masked Aadhaar No., Date of Birth, Gender, Verified Address Token.",
-    digiPurpose: "Purpose: Digital authentication and non-repudiation of E-FIR submission to Police Department.",
+    digiPurpose: "Purpose: Digital authentication and non-repudiation of e-FIR submission to Police Department.",
     digiPrivacy: "Privacy Notice: In accordance with IT Act 2000 and Digital Personal Data Protection, only verified attribute tokens are shared.",
-    digiConsentCheck: "I consent to the verification of my identity for authentication of this E-FIR.",
+    digiConsentCheck: "I consent to the verification of my identity for authentication of this e-FIR.",
     btnGiveConsent: "Give Consent & Verify",
     verifyingIdentity: "Verifying Identity with DigiLocker...",
     verifyingSubtext: "Contacting secure gateway • Checking citizen identity hash...",
@@ -217,7 +217,7 @@ const TRANSLATIONS = {
     // E-Signature (Simulated)
     eSignTitle: "Electronic Signature",
     eSignSubtitle: "Please carefully review your statement before signing.",
-    eSignStatementReview: "Final E-FIR Statement to be Digitally Signed:",
+    eSignStatementReview: "Final e-FIR Statement to be Digitally Signed:",
     eSignDeclaration: "I have reviewed the statement and confirm that it represents my true and accurate submission.",
     eSignSignatureLabel: "Upload Your Signature Image",
     eSignSignatureHint: "Upload a clear image (JPG/PNG) of your handwritten signature. Prototype Mode: any image works.",
@@ -235,7 +235,7 @@ const TRANSLATIONS = {
     eSignStatus: "Signature Status: Completed & Cryptographically Sealed",
     eSignCertRef: "Digital Certificate Hash:",
     eSignTimestamp: "Timestamp:",
-    btnCompleteAuthentication: "Complete E-FIR Authentication",
+    btnCompleteAuthentication: "Complete e-FIR Authentication",
 
     // Officer Login Page
     officerLoginTitle: "Mumbai Police Officer Portal",
@@ -247,11 +247,11 @@ const TRANSLATIONS = {
     btnBackToCitizenSite: "Back to Citizen Site",
 
     // Final Authentication Page
-    authSuccessTitle: "E-FIR Successfully Authenticated",
+    authSuccessTitle: "e-FIR Successfully Authenticated",
     authSuccessSubtitle: "Your electronic complaint has been digitally authenticated and transmitted to the jurisdictional police station.",
-    permanentRefNo: "E-FIR Reference Number:",
+    permanentRefNo: "e-FIR Reference Number:",
     submissionStages: "Authentication & Scrutiny Stages",
-    stageSubmitted: "E-FIR Submitted",
+    stageSubmitted: "e-FIR Submitted",
     stageIdentityVerif: "Identity Verification (DigiLocker)",
     stageEsignature: "E-Signature (Electronic Seal)",
     stageDigitalAuth: "Digital Authentication",
@@ -261,28 +261,28 @@ const TRANSLATIONS = {
     statusPending: "Under Review",
     btnGoToDashboard: "Go to Dashboard",
     btnPrintAck: "Print / Download Acknowledgement",
-    btnTrackNow: "Track This E-FIR",
+    btnTrackNow: "Track This e-FIR",
 
     // Acknowledgement Slip
     ackHeaderTitle: "GOVERNMENT STATE POLICE CITIZEN SERVICES",
-    ackDocTitle: "E-FIR DIGITAL AUTHENTICATION ACKNOWLEDGEMENT RECEIPT",
+    ackDocTitle: "e-FIR DIGITAL AUTHENTICATION ACKNOWLEDGEMENT RECEIPT",
     ackDisclaimerText: "Important Legal Notice: Digital authentication confirms the electronic authentication of the submission. FIR registration remains subject to applicable police procedures and legal requirements under the Code of Criminal Procedure / Bharatiya Nyaya Sanhita.",
     ackPrintBtn: "Print Acknowledgement Slip",
 
-    // E-FIR Tracking
-    trackTitle: "Track E-FIR Status",
-    trackSubtitle: "Enter your E-FIR Reference Number to check real-time review and registration status.",
+    // e-FIR Tracking
+    trackTitle: "Track e-FIR Status",
+    trackSubtitle: "Enter your e-FIR Reference Number to check real-time review and registration status.",
     trackPlaceholder: "e.g. EFIR/2026/000123",
     btnTrackSubmit: "Track Status",
-    recentSubmissions: "Quick Track Recent E-FIRs:",
+    recentSubmissions: "Quick Track Recent e-FIRs:",
     timelineTitle: "Progress Timeline",
     currentStageBadge: "Current Stage:",
     officerRemarksTitle: "Police Department Remarks & Updates:",
-    noRemarksYet: "Your E-FIR is currently under review. Official remarks will appear here once reviewed by the Investigating Officer.",
+    noRemarksYet: "Your e-FIR is currently under review. Official remarks will appear here once reviewed by the Investigating Officer.",
 
     // Additional Information Flow
     addInfoRequiredTitle: "Additional Information Required",
-    addInfoRequiredDesc: "The Investigating Police Officer has requested supplementary details or clarification regarding this E-FIR.",
+    addInfoRequiredDesc: "The Investigating Police Officer has requested supplementary details or clarification regarding this e-FIR.",
     officerQuery: "Officer's Query / Requirement:",
     deadlineText: "Response Expected By:",
     fieldAdditionalText: "Your Supplementary Statement / Clarification",
@@ -293,7 +293,7 @@ const TRANSLATIONS = {
     // Police Officer Portal
     policePortalTitle: "Police Officer Administration Portal",
     policePortalSubtitle: "Station House Officer (SHO) & Investigating Officer (IO) Scrutiny Desk",
-    kpiTotal: "Total E-FIRs",
+    kpiTotal: "Total e-FIRs",
     kpiNew: "New Submissions",
     kpiVerified: "Digital Auth Verified",
     kpiPendingScrutiny: "Pending Scrutiny",
@@ -303,7 +303,7 @@ const TRANSLATIONS = {
     policeFilterStatus: "Filter by Status:",
     allStations: "All Police Stations",
     allStatuses: "All Statuses",
-    thEfirNo: "E-FIR Reference",
+    thEfirNo: "e-FIR Reference",
     thInformant: "Informant Name",
     thStation: "Police Station",
     thOffence: "Offence Category",
@@ -312,8 +312,8 @@ const TRANSLATIONS = {
     thActions: "Action",
     btnReviewEfir: "Review & Scrutinize",
 
-    // Police E-FIR Scrutiny Page
-    policeReviewTitle: "E-FIR Detailed Scrutiny & Assessment",
+    // Police e-FIR Scrutiny Page
+    policeReviewTitle: "e-FIR Detailed Scrutiny & Assessment",
     badgeAuthSuccess: "Digital Authentication Completed",
     badgeIdentityVerified: "DigiLocker Identity Verified",
     badgeEsignDone: "E-Sign Certified",
@@ -340,7 +340,7 @@ const TRANSLATIONS = {
     transferModalTitle: "Refer / Transfer to Another Police Station",
     fieldTargetStation: "Target Jurisdictional Police Station",
     fieldTransferReason: "Reason for Jurisdictional Transfer",
-    btnConfirmTransfer: "Transfer E-FIR",
+    btnConfirmTransfer: "Transfer e-FIR",
 
     // Audit Trail
     auditTrailTitle: "Cryptographic Audit Trail & Activity Log",
@@ -382,7 +382,7 @@ const TRANSLATIONS = {
 
     // Help & FAQ
     faqTitle: "Frequently Asked Questions & Help Guide",
-    faqSubtitle: "Find answers regarding the digital E-FIR submission, DigiLocker verification, and legal workflow.",
+    faqSubtitle: "Find answers regarding the digital e-FIR submission, DigiLocker verification, and legal workflow.",
     faqSearchPlaceholder: "Search FAQ topics...",
 
     // Statuses
@@ -403,10 +403,10 @@ const TRANSLATIONS = {
     privacySubtitle: "How citizen identity and electronic complaint data are secured.",
     
     // Notifications
-    notifSubmitted: "Your E-FIR has been successfully submitted.",
+    notifSubmitted: "Your e-FIR has been successfully submitted.",
     notifVerified: "Your identity has been successfully verified via DigiLocker.",
     notifEsigned: "Your E-signature has been completed.",
-    notifScrutiny: "Your E-FIR is currently under police scrutiny at the jurisdictional station.",
+    notifScrutiny: "Your e-FIR is currently under police scrutiny at the jurisdictional station.",
     notifAddInfoReq: "Additional information has been requested by the Investigating Officer.",
     notifFirRegistered: "Your formal Police FIR has been registered successfully.",
 
@@ -532,7 +532,7 @@ const TRANSLATIONS = {
     btnDeleteDraft: "हटवा",
     btnDownloadAck: "पावती डाउनलोड करा",
 
-    // Multi-Step E-FIR Wizard
+    // Multi-Step e-FIR Wizard
     wizardTitle: "नवीन ई-एफआयआर नोंदवा",
     wizardSubtitle: "डिजिटल पडताळणीसाठी आपली तक्रार सादर करण्यासाठी खालील 5 टप्पे पूर्ण करा.",
     step1: "1. तक्रारदार तपशील",
@@ -684,7 +684,7 @@ const TRANSLATIONS = {
     ackDisclaimerText: "महत्त्वाची कायदेशीर सूचना: डिजिटल प्रमाणीकरण केवळ सादरीकरणाच्या इलेक्ट्रॉनिक प्रमाणीकरणाची पुष्टी करते. एफआयआर नोंदणी फौजदारी प्रक्रिया संहिता / भारतीय नागरिक सुरक्षा संहितेअंतर्गत लागू पोलीस प्रक्रिया व कायदेशीर आवश्यकतांच्या अधीन आहे.",
     ackPrintBtn: "पावती प्रिंट करा",
 
-    // E-FIR Tracking
+    // e-FIR Tracking
     trackTitle: "ई-एफआयआर स्थिती ट्रॅक करा",
     trackSubtitle: "प्रत्यक्ष वेळेतील पुनरावलोकन व नोंदणी स्थिती तपासण्यासाठी आपला ई-एफआयआर संदर्भ क्रमांक टाका.",
     trackPlaceholder: "उदा. EFIR/2026/000123",
@@ -727,7 +727,7 @@ const TRANSLATIONS = {
     thActions: "कृती",
     btnReviewEfir: "पुनरावलोकन करा",
 
-    // Police E-FIR Scrutiny Page
+    // Police e-FIR Scrutiny Page
     policeReviewTitle: "ई-एफआयआर सविस्तर पुनरावलोकन व मूल्यांकन",
     badgeAuthSuccess: "डिजिटल प्रमाणीकरण पूर्ण",
     badgeIdentityVerified: "डिजिलॉकर ओळख पडताळलेली",
@@ -947,7 +947,7 @@ const TRANSLATIONS = {
     btnDeleteDraft: "हटाएं",
     btnDownloadAck: "पावती डाउनलोड करें",
 
-    // Multi-Step E-FIR Wizard
+    // Multi-Step e-FIR Wizard
     wizardTitle: "नई ई-एफआईआर दर्ज करें",
     wizardSubtitle: "डिजिटल सत्यापन हेतु अपनी शिकायत दर्ज करने के लिए नीचे दिए गए 5 चरण पूरे करें।",
     step1: "1. आवेदक विवरण",
@@ -1099,7 +1099,7 @@ const TRANSLATIONS = {
     ackDisclaimerText: "महत्वपूर्ण विधिक सूचना: डिजिटल प्रमाणीकरण केवल प्रविष्टि के इलेक्ट्रॉनिक प्रमाणीकरण की पुष्टि करता है। एफआईआर पंजीकरण भारतीय न्याय संहिता / दंड प्रक्रिया संहिता के तहत लागू पुलिस प्रक्रियाओं और कानूनी आवश्यकताओं के अधीन है।",
     ackPrintBtn: "पावती रसीद प्रिंट करें",
 
-    // E-FIR Tracking
+    // e-FIR Tracking
     trackTitle: "ई-एफआईआर स्थिति ट्रैक करें",
     trackSubtitle: "समीक्षा और पंजीकरण की वास्तविक स्थिति जानने के लिए अपनी ई-एफआईआर संदर्भ संख्या दर्ज करें।",
     trackPlaceholder: "उदा. EFIR/2026/000123",
@@ -1142,7 +1142,7 @@ const TRANSLATIONS = {
     thActions: "कार्य",
     btnReviewEfir: "समीक्षा एवं जांच करें",
 
-    // Police E-FIR Scrutiny Page
+    // Police e-FIR Scrutiny Page
     policeReviewTitle: "ई-एफआईआर विस्तृत जांच एवं मूल्यांकन",
     badgeAuthSuccess: "डिजिटल प्रमाणीकरण पूर्ण",
     badgeIdentityVerified: "डिजिलॉकर पहचान सत्यापित",

@@ -1,5 +1,5 @@
 /**
- * Indian Police E-FIR Citizen Portal
+ * Indian Police e-FIR Citizen Portal
  * Simulated DigiLocker Identity Verification Flow
  * (Prototype / Demo Mode)
  */

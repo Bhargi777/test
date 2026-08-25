@@ -1,5 +1,5 @@
 /**
- * Indian Police E-FIR Citizen Portal
+ * Indian Police e-FIR Citizen Portal
  * Police Officer Administration Portal & Scrutiny Desk
  */
 
@@ -44,7 +44,7 @@
     filterAndRenderTable();
   }
 
-  // Filter and display E-FIR table rows
+  // Filter and display e-FIR table rows
   function filterAndRenderTable() {
     const efirs = window.Store.getEfirs();
     const currentLang = window.Store.getLang();
@@ -68,7 +68,7 @@
     if (!tbody) return;
 
     if (filtered.length === 0) {
-      tbody.innerHTML = `<tr><td colspan="7" style="text-align: center; padding: 24px; color: var(--color-neutral-500);">No E-FIR submissions match the selected filters.</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="7" style="text-align: center; padding: 24px; color: var(--color-neutral-500);">No e-FIR submissions match the selected filters.</td></tr>`;
       return;
     }
 
@@ -95,11 +95,11 @@
     }).join('');
   }
 
-  // Open Detailed E-FIR Review Page
+  // Open Detailed e-FIR Review Page
   function openReview(efirId) {
     const efir = window.Store.getEfirById(efirId);
     if (!efir) {
-      window.App.showToast("E-FIR not found.", "warning");
+      window.App.showToast("e-FIR not found.", "warning");
       return;
     }
 
@@ -373,7 +373,7 @@
     const auditLogs = currentViewingEfir.auditTrail || [];
     auditLogs.push({
       time: nowStr,
-      action: `E-FIR Transferred to ${targetStation}`,
+      action: `e-FIR Transferred to ${targetStation}`,
       actor: "Station House Officer",
       ref: `TRANSFER-JURISDICTION`
     });
@@ -392,7 +392,7 @@
     });
 
     document.getElementById("police-transfer-modal").classList.remove("active");
-    window.App.showToast(`E-FIR transferred to ${targetStation}`, "info");
+    window.App.showToast(`e-FIR transferred to ${targetStation}`, "info");
     
     // Refresh review page
     openReview(currentViewingEfir.id);
@@ -445,7 +445,7 @@
       auditTrail: auditLogs
     });
 
-    window.App.showToast("E-FIR marked as Non-Cognizable / Disposed.", "info");
+    window.App.showToast("e-FIR marked as Non-Cognizable / Disposed.", "info");
     openReview(currentViewingEfir.id);
   }
 

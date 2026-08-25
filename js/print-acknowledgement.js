@@ -1,14 +1,14 @@
 /**
- * Indian Police E-FIR Citizen Portal
+ * Indian Police e-FIR Citizen Portal
  * Printable Acknowledgement Receipt & Official FIR Document Renderer
  */
 
 (function() {
-  // Render Official E-FIR Acknowledgement Slip
+  // Render Official e-FIR Acknowledgement Slip
   function renderAcknowledgement(efirId) {
     const efir = window.Store.getEfirById(efirId);
     if (!efir) {
-      window.App.showToast("E-FIR document not found.", "warning");
+      window.App.showToast("e-FIR document not found.", "warning");
       return;
     }
 

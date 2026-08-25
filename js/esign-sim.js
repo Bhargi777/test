@@ -1,5 +1,5 @@
 /**
- * Indian Police E-FIR Citizen Portal
+ * Indian Police e-FIR Citizen Portal
  * Simulated Electronic Signature Flow (E-Sign)
  * (Prototype / Demo Mode)
  */
@@ -146,7 +146,7 @@
     window.App.showToast("Electronic Signature Successfully Applied", "success");
   }
 
-  // Complete Final Digital Authentication & Save E-FIR
+  // Complete Final Digital Authentication & Save e-FIR
   function completeAuthentication() {
     if (!esignState.isEsigned) {
       window.App.showToast("Electronic signature is required.", "warning");
@@ -166,10 +166,10 @@
     // Construct Audit Trail
     const nowTimeStr = new Date().toISOString().replace('T', ' ').slice(0, 19);
     const auditTrail = [
-      { time: nowTimeStr, action: "E-FIR Form Filled & Reviewed", actor: `Citizen (${payload.informant.name})`, ref: payload.draftId || "WEB-SUBMIT" },
+      { time: nowTimeStr, action: "e-FIR Form Filled & Reviewed", actor: `Citizen (${payload.informant.name})`, ref: payload.draftId || "WEB-SUBMIT" },
       { time: nowTimeStr, action: "DigiLocker Identity Verified", actor: "Simulated DigiLocker Gateway", ref: digilocker.txnRef },
       { time: nowTimeStr, action: "Electronic Signature Verified via OTP", actor: "Simulated e-Sign Service", ref: esignInfo.txnRef },
-      { time: nowTimeStr, action: "Digital Authentication Completed & Transmitted to Police Station", actor: "E-FIR Portal Engine", ref: "SEC-AUTH-2026" }
+      { time: nowTimeStr, action: "Digital Authentication Completed & Transmitted to Police Station", actor: "e-FIR Portal Engine", ref: "SEC-AUTH-2026" }
     ];
 
     // Save into Store
@@ -210,7 +210,7 @@
 
     // Navigate to Authentication View
     window.App.navigate("auth-success");
-    window.App.showToast(`E-FIR Authenticated: ${efir.id}`, "success");
+    window.App.showToast(`e-FIR Authenticated: ${efir.id}`, "success");
 
   }
 

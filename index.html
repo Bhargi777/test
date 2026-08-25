@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mumbai Police Citizen Services • E-FIR Citizen Portal (Official Prototype)</title>
+  <title>Mumbai Police Citizen Services • e-FIR Citizen Portal (Official Prototype)</title>
   <link rel="stylesheet" href="css/styles.css">
-  <meta name="description" content="Mumbai Police E-FIR Citizen Portal with Digital Identity Verification and Electronic Signature">
+  <meta name="description" content="Mumbai Police e-FIR Citizen Portal with Digital Identity Verification and Electronic Signature">
 </head>
 <body>
 
@@ -72,8 +72,8 @@
         <ul class="nav-list">
           <li><a href="#home" class="nav-link active" data-view="home" data-i18n="navHome">Home</a></li>
           <li><a href="#dashboard" class="nav-link" data-view="citizen-dashboard" data-i18n="navDashboard">Dashboard</a></li>
-          <li><a href="#register" class="nav-link" data-view="register-efir" data-i18n="navRegisterEfir">Register E-FIR</a></li>
-          <li><a href="#track" class="nav-link" data-view="track-efir" data-i18n="navTrackEfir">Track E-FIR</a></li>
+          <li><a href="#register" class="nav-link" data-view="register-efir" data-i18n="navRegisterEfir">Register e-FIR</a></li>
+          <li><a href="#track" class="nav-link" data-view="track-efir" data-i18n="navTrackEfir">Track e-FIR</a></li>
           <li><a href="#view-fir" class="nav-link" data-view="view-fir" data-i18n="navViewFir">View FIR</a></li>
           <li><a href="#directory" class="nav-link" data-view="station-directory" data-i18n="navDirectory">Police Station Directory</a></li>
           <li><a href="#faq" class="nav-link" data-view="help-faq" data-i18n="navFaq">Help & FAQs</a></li>
@@ -97,13 +97,13 @@
             <span>🛡️</span> <span data-i18n="heroNotice">Official Prototype • Instant digital identity verification via simulated DigiLocker & OTP e-Sign.</span>
           </div>
           <h2 data-i18n="heroTitle">Report. Verify. Sign. Track.</h2>
-          <p data-i18n="heroSubtitle">Submit your complaint electronically and securely authenticate your E-FIR without unnecessary physical visits for authentication.</p>
+          <p data-i18n="heroSubtitle">Submit your complaint electronically and securely authenticate your e-FIR without unnecessary physical visits for authentication.</p>
           <div class="hero-btn-group">
             <button type="button" class="btn btn-gold btn-lg" onclick="window.App.navigate('register-efir')" data-i18n="btnRegisterEfir">
-              ✍️ Register E-FIR
+              ✍️ Register e-FIR
             </button>
             <button type="button" class="btn btn-outline-light btn-lg" onclick="window.App.navigate('track-efir')" data-i18n="btnTrackEfir">
-              🔍 Track E-FIR
+              🔍 Track e-FIR
             </button>
             <button type="button" class="btn btn-outline-light btn-lg" onclick="window.App.navigate('officer-login')" data-i18n="btnPoliceLogin">
               👮 Officer Access
@@ -123,7 +123,7 @@
       <!-- 4-Stage Concept Infographic Section -->
       <div class="concept-section">
         <div class="section-header">
-          <h3 data-i18n="conceptTitle">How Digital E-FIR Authentication Works</h3>
+          <h3 data-i18n="conceptTitle">How Digital e-FIR Authentication Works</h3>
           <p data-i18n="conceptSubtitle">Four simple stages to register and digitally authenticate your complaint securely from anywhere.</p>
         </div>
         <div class="stage-grid">
@@ -158,7 +158,7 @@
         <a href="#register" class="service-card" onclick="window.App.navigate('register-efir'); return false;">
           <div>
             <div class="service-icon">✍️</div>
-            <h4 data-i18n="cardRegisterTitle">Register New E-FIR</h4>
+            <h4 data-i18n="cardRegisterTitle">Register New e-FIR</h4>
             <p data-i18n="cardRegisterDesc">File non-cognizable and specified cognizable complaints with digital verification.</p>
           </div>
           <div class="service-action-link">Get Started →</div>
@@ -167,8 +167,8 @@
         <a href="#track" class="service-card" onclick="window.App.navigate('track-efir'); return false;">
           <div>
             <div class="service-icon">🔍</div>
-            <h4 data-i18n="cardTrackTitle">Track E-FIR Status</h4>
-            <p data-i18n="cardTrackDesc">Check real-time scrutiny status, officer updates, and registration progress.</p>
+            <h4 data-i18n="cardTrackTitle">Track e-FIR Status</h4>
+            <p data-i18n="cardTrackDesc">Receive an authenticated reference number instantly and track the status of your e-FIR</p>
           </div>
           <div class="service-action-link">Track Now →</div>
         </a>
@@ -224,7 +224,7 @@
           </div>
           <div style="display:flex; gap:10px;">
             <button type="button" class="btn btn-gold" onclick="window.App.navigate('register-efir')" data-i18n="btnRegisterEfir">
-              + Register New E-FIR
+              + Register New e-FIR
             </button>
             <button type="button" class="btn btn-secondary" onclick="window.App.openLoginModal()">
               Switch Profile
@@ -233,18 +233,18 @@
         </div>
       </div>
 
-      <!-- My E-FIRs Section -->
+      <!-- My e-FIRs Section -->
       <div class="concept-section" style="margin-top: 24px;">
         <div class="section-header" style="display:flex; justify-content:space-between; align-items:center;">
-          <h3 data-i18n="myEfirs">My E-FIR Submissions</h3>
+          <h3 data-i18n="myEfirs">My e-FIR Submissions</h3>
           <span style="font-size:0.875rem; color:var(--color-neutral-500);">Live Status Updates</span>
         </div>
 
         <div class="table-responsive">
-          <table class="data-table" aria-label="My E-FIR Submissions">
+          <table class="data-table" aria-label="My e-FIR Submissions">
             <thead>
               <tr>
-                <th data-i18n="colRefNo">E-FIR Reference</th>
+                <th data-i18n="colRefNo">e-FIR Reference</th>
                 <th data-i18n="colDate">Submission Date</th>
                 <th data-i18n="colStation">Police Station</th>
                 <th data-i18n="colOffence">Offence Category</th>
@@ -258,7 +258,7 @@
           </table>
         </div>
         <p id="no-efirs-notice" style="display:none; text-align:center; padding:24px; color:var(--color-neutral-500);" data-i18n="noEfirsFound">
-          No E-FIRs submitted yet. Click 'Register E-FIR' to begin.
+          No e-FIRs submitted yet. Click 'Register e-FIR' to begin.
         </p>
       </div>
 
@@ -277,13 +277,13 @@
     </section>
 
     <!-- ==========================================
-         VIEW: REGISTER E-FIR (5-STEP WIZARD)
+         VIEW: REGISTER e-FIR (5-STEP WIZARD)
          ========================================== -->
     <section class="page-view" id="view-register-efir">
       <div class="wizard-container">
         <!-- Wizard Header -->
         <div class="wizard-header">
-          <h2 data-i18n="wizardTitle">Register New E-FIR</h2>
+          <h2 data-i18n="wizardTitle">Register New e-FIR</h2>
           <p data-i18n="wizardSubtitle">Complete the 5 steps below to submit your complaint for digital verification.</p>
         </div>
 
@@ -612,7 +612,7 @@
           <span class="sim-watermark" data-i18n="simulatedTag">Prototype / Simulated Verification</span>
           <div style="font-size: 2.5rem; margin-bottom: 8px;">🔐</div>
           <h3 data-i18n="eVerifTitle">Digital Identity Verification</h3>
-          <p data-i18n="eVerifSubtitle">Verify your identity to digitally authenticate your E-FIR.</p>
+          <p data-i18n="eVerifSubtitle">Verify your identity to digitally authenticate your e-FIR.</p>
         </div>
 
         <!-- Step A: Intro Screen -->
@@ -632,14 +632,14 @@
           </h4>
           <ul style="font-size:0.875rem; color:#334155; margin-bottom:16px; padding-left:20px; display:flex; flex-direction:column; gap:6px;">
             <li data-i18n="digiInfoRequested"><strong>Information Requested:</strong> Full Name, Masked Aadhaar No., Date of Birth, Gender, Verified Address Token.</li>
-            <li data-i18n="digiPurpose"><strong>Purpose:</strong> Digital authentication and non-repudiation of E-FIR submission to Police Department.</li>
+            <li data-i18n="digiPurpose"><strong>Purpose:</strong> Digital authentication and non-repudiation of e-FIR submission to Police Department.</li>
             <li data-i18n="digiPrivacy"><strong>Privacy Notice:</strong> In accordance with IT Act 2000 and Digital Personal Data Protection, only verified attribute tokens are shared.</li>
           </ul>
 
           <div style="background:#ffffff; border:1px solid #bae6fd; padding:14px; border-radius:var(--radius-md); margin-bottom:20px;">
             <label style="display:flex; align-items:center; gap:10px; cursor:pointer; font-size:0.875rem; font-weight:600; color:#0369a1;">
               <input type="checkbox" id="digi-consent-checkbox" style="width:18px; height:18px;">
-              <span data-i18n="digiConsentCheck">I consent to the verification of my identity for authentication of this E-FIR.</span>
+              <span data-i18n="digiConsentCheck">I consent to the verification of my identity for authentication of this e-FIR.</span>
             </label>
           </div>
 
@@ -706,7 +706,7 @@
         <div id="esign-step-review">
           <div class="review-summary-card">
             <div class="review-card-header">
-              <h4 data-i18n="eSignStatementReview">Final E-FIR Statement to be Digitally Signed:</h4>
+              <h4 data-i18n="eSignStatementReview">Final e-FIR Statement to be Digitally Signed:</h4>
               <span class="lang-badge-pill" id="esign-statement-lang">English</span>
             </div>
             <p id="esign-statement-display" style="font-size:0.9375rem; line-height:1.6; color:var(--color-neutral-800); white-space:pre-wrap; background:var(--color-neutral-50); padding:16px; border-radius:var(--radius-md); border:1px solid var(--color-neutral-200);">
@@ -772,7 +772,7 @@
 
           <div style="text-align:center;">
             <button type="button" class="btn btn-primary btn-lg" onclick="window.EsignSim.completeAuthentication()" data-i18n="btnCompleteAuthentication">
-              🛡️ Complete E-FIR Authentication →
+              🛡️ Complete e-FIR Authentication →
             </button>
           </div>
         </div>
@@ -787,7 +787,7 @@
       <div class="concept-section" style="max-width: 800px; margin: 0 auto; text-align:center;">
         <div style="font-size:3.5rem; color:var(--color-success); margin-bottom:12px;">✅</div>
         <h2 style="font-size:1.75rem; font-weight:800; color:var(--color-primary-dark);" data-i18n="authSuccessTitle">
-          E-FIR Successfully Authenticated
+          e-FIR Successfully Authenticated
         </h2>
         <p style="font-size:1rem; color:var(--color-neutral-600); max-width:600px; margin: 8px auto 24px;" data-i18n="authSuccessSubtitle">
           Your electronic complaint has been digitally authenticated and transmitted to the jurisdictional police station.
@@ -795,7 +795,7 @@
 
         <!-- Reference Callout Box -->
         <div style="background:var(--color-primary-subtle); border:2px dashed var(--color-primary-light); padding:20px; border-radius:var(--radius-lg); margin-bottom:24px;">
-          <span style="font-size:0.875rem; font-weight:700; color:var(--color-primary);" data-i18n="permanentRefNo">E-FIR Reference Number:</span>
+          <span style="font-size:0.875rem; font-weight:700; color:var(--color-primary);" data-i18n="permanentRefNo">e-FIR Reference Number:</span>
           <div id="auth-ref-number" style="font-size:2rem; font-weight:900; color:var(--color-primary-dark); font-family:monospace; margin-top:4px;">
             EFIR/2026/000123
           </div>
@@ -812,7 +812,7 @@
             </thead>
             <tbody>
               <tr>
-                <td data-i18n="stageSubmitted">E-FIR Submitted</td>
+                <td data-i18n="stageSubmitted">e-FIR Submitted</td>
                 <td><span class="status-badge badge-completed">✓ Completed</span></td>
               </tr>
               <tr>
@@ -847,7 +847,7 @@
         <!-- Action CTAs -->
         <div style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap;">
           <button type="button" class="btn btn-gold btn-lg" onclick="window.App.trackSpecificEfir(document.getElementById('auth-ref-number').textContent)" data-i18n="btnTrackNow">
-            🔍 Track E-FIR
+            🔍 Track e-FIR
           </button>
           <button type="button" class="btn btn-primary btn-lg" onclick="window.PrintDoc.renderAcknowledgement(document.getElementById('auth-ref-number').textContent)" data-i18n="btnPrintAck">
             🖨️ Download Acknowledgement
@@ -860,13 +860,13 @@
     </section>
 
     <!-- ==========================================
-         VIEW: TRACK E-FIR
+         VIEW: TRACK e-FIR
          ========================================== -->
     <section class="page-view" id="view-track-efir">
       <div class="concept-section" style="max-width: 840px; margin: 0 auto;">
         <div class="section-header">
-          <h3 data-i18n="trackTitle">Track E-FIR Status</h3>
-          <p data-i18n="trackSubtitle">Enter your E-FIR Reference Number to check real-time scrutiny and registration status.</p>
+          <h3 data-i18n="trackTitle">Track e-FIR Status</h3>
+          <p data-i18n="trackSubtitle">Enter your e-FIR Reference Number to check real-time scrutiny and registration status.</p>
         </div>
 
         <!-- Search Bar -->
@@ -879,7 +879,7 @@
 
         <!-- Quick Track List -->
         <div style="margin-bottom:24px;">
-          <span style="font-size:0.8125rem; color:var(--color-neutral-500); font-weight:600;" data-i18n="recentSubmissions">Quick Track Recent E-FIRs:</span>
+          <span style="font-size:0.8125rem; color:var(--color-neutral-500); font-weight:600;" data-i18n="recentSubmissions">Quick Track Recent e-FIRs:</span>
           <div id="quick-track-list" style="margin-top:6px; display:flex; flex-wrap:wrap; gap:6px;">
             <!-- Dynamically populated -->
           </div>
@@ -887,7 +887,7 @@
 
         <!-- Not Found Alert -->
         <div id="track-notfound-box" style="display:none; background:#fee2e2; border:1px solid #fca5a5; color:#991b1b; padding:16px; border-radius:var(--radius-md); text-align:center;">
-          No E-FIR record found for the provided reference number. Please check the number and try again.
+          No e-FIR record found for the provided reference number. Please check the number and try again.
         </div>
 
         <!-- Tracking Result Box -->
@@ -895,7 +895,7 @@
           <div class="review-summary-card" style="border-left: 5px solid var(--color-primary);">
             <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:12px;">
               <div>
-                <span style="font-size:0.75rem; color:var(--color-neutral-500); font-weight:700;">E-FIR REFERENCE:</span>
+                <span style="font-size:0.75rem; color:var(--color-neutral-500); font-weight:700;">e-FIR REFERENCE:</span>
                 <h4 id="track-disp-ref" style="font-size:1.25rem; font-family:monospace; color:var(--color-primary-dark);">EFIR/2026/000123</h4>
               </div>
               <div>
@@ -917,7 +917,7 @@
               <h4 style="font-size:1.0625rem; font-weight:700;" data-i18n="addInfoRequiredTitle">Additional Information Required</h4>
             </div>
             <p style="font-size:0.875rem; color:#7c2d12; margin-bottom:12px;" data-i18n="addInfoRequiredDesc">
-              The Investigating Police Officer has requested supplementary details or clarification regarding this E-FIR.
+              The Investigating Police Officer has requested supplementary details or clarification regarding this e-FIR.
             </p>
             <div style="background:#ffffff; border:1px solid #fed7aa; padding:12px; border-radius:var(--radius-sm); margin-bottom:16px;">
               <div style="font-size:0.75rem; font-weight:700; color:#9a3412;" data-i18n="officerQuery">Officer's Query:</div>
@@ -948,7 +948,7 @@
           <div class="review-summary-card" style="background:#f8fafc;">
             <h4 style="margin-bottom:8px;" data-i18n="officerRemarksTitle">Police Department Remarks & Updates:</h4>
             <p id="track-disp-remarks" style="font-size:0.875rem; color:var(--color-neutral-700); line-height:1.5;">
-              Your E-FIR is currently under review.
+              Your e-FIR is currently under review.
             </p>
           </div>
         </div>
@@ -1009,7 +1009,7 @@
       <div class="kpi-grid" style="margin-top:24px;">
         <div class="kpi-card kpi-new">
           <div class="kpi-value" id="kpi-total-val">0</div>
-          <div class="kpi-label" data-i18n="kpiTotal">Total E-FIRs</div>
+          <div class="kpi-label" data-i18n="kpiTotal">Total e-FIRs</div>
         </div>
         <div class="kpi-card kpi-verified">
           <div class="kpi-value" id="kpi-verified-val">0</div>
@@ -1032,7 +1032,7 @@
       <!-- Filters & Queue Table -->
       <div class="concept-section">
         <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:20px;">
-          <h3 style="font-size:1.25rem;">E-FIR Scrutiny Desk Queue</h3>
+          <h3 style="font-size:1.25rem;">e-FIR Scrutiny Desk Queue</h3>
           <div style="display:flex; gap:10px; flex-wrap:wrap;">
             <input type="text" id="police-search-input" class="form-control" placeholder="Search reference, name..." style="width:200px; padding:6px 12px; font-size:0.875rem;">
             <select id="police-filter-station" class="form-control" style="width:180px; padding:6px 12px; font-size:0.875rem;">
@@ -1048,10 +1048,10 @@
         </div>
 
         <div class="table-responsive">
-          <table class="data-table" aria-label="Police E-FIR Queue">
+          <table class="data-table" aria-label="Police e-FIR Queue">
             <thead>
               <tr>
-                <th data-i18n="thEfirNo">E-FIR Reference</th>
+                <th data-i18n="thEfirNo">e-FIR Reference</th>
                 <th data-i18n="thInformant">Informant Name</th>
                 <th data-i18n="thStation">Police Station</th>
                 <th data-i18n="thOffence">Offence Category</th>
@@ -1069,7 +1069,7 @@
     </section>
 
     <!-- ==========================================
-         VIEW: POLICE E-FIR SCRUTINY / DETAIL
+         VIEW: POLICE e-FIR SCRUTINY / DETAIL
          ========================================== -->
     <section class="page-view" id="view-police-review">
       <div class="concept-section" style="max-width: 960px; margin: 0 auto;">
@@ -1272,14 +1272,14 @@
         <div class="official-doc-container" id="printable-ack-container">
           <div class="doc-header-seal">
             <h2 data-i18n="ackHeaderTitle">GOVERNMENT STATE POLICE CITIZEN SERVICES</h2>
-            <h3 data-i18n="ackDocTitle">E-FIR DIGITAL AUTHENTICATION ACKNOWLEDGEMENT RECEIPT</h3>
+            <h3 data-i18n="ackDocTitle">e-FIR DIGITAL AUTHENTICATION ACKNOWLEDGEMENT RECEIPT</h3>
             <p style="font-size: 0.75rem; color: #475569; margin-top: 4px;">Generated electronically via Official Mumbai Police Citizen Services Gateway • Non-Repudiable Submission</p>
           </div>
 
           <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px;">
             <div>
               <div style="font-size: 1.125rem; font-weight: 800; color: #000; font-family: monospace;">
-                E-FIR REF: <span id="ack-doc-ref">EFIR/2026/000123</span>
+                e-FIR REF: <span id="ack-doc-ref">EFIR/2026/000123</span>
               </div>
               <div style="font-size: 0.8125rem; color: #334155; margin-top: 2px;">
                 Generated On: <span id="ack-doc-date">22 Aug 2026, 10:25 AM</span>
@@ -1454,7 +1454,7 @@
       <div class="concept-section" style="max-width: 860px; margin: 0 auto;">
         <div class="section-header">
           <h3 data-i18n="faqTitle">Frequently Asked Questions & Help Guide</h3>
-          <p data-i18n="faqSubtitle">Find answers regarding the digital E-FIR submission, DigiLocker verification, and legal workflow.</p>
+          <p data-i18n="faqSubtitle">Find answers regarding the digital e-FIR submission, DigiLocker verification, and legal workflow.</p>
         </div>
 
         <div style="margin-bottom:20px;">
@@ -1494,7 +1494,7 @@
         <div class="review-summary-card">
           <h4 style="color:var(--color-primary-dark); margin-bottom:8px;">3. Cryptographic Audit Trail & Non-Repudiation</h4>
           <p style="font-size:0.875rem; color:var(--color-neutral-700); line-height:1.6;">
-            Every E-FIR submission generates an immutable event log recording timestamp, actor, and SHA-256 digital signature hashes to prevent unauthorized modifications after submission.
+            Every e-FIR submission generates an immutable event log recording timestamp, actor, and SHA-256 digital signature hashes to prevent unauthorized modifications after submission.
           </p>
         </div>
       </div>
@@ -1707,7 +1707,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" onclick="document.getElementById('police-transfer-modal').classList.remove('active')" data-i18n="cancel">Cancel</button>
-        <button type="button" class="btn btn-primary" onclick="window.PolicePortal.confirmTransfer()" data-i18n="btnConfirmTransfer">Transfer E-FIR</button>
+        <button type="button" class="btn btn-primary" onclick="window.PolicePortal.confirmTransfer()" data-i18n="btnConfirmTransfer">Transfer e-FIR</button>
       </div>
     </div>
   </div>
@@ -1733,8 +1733,8 @@
           <h5>Quick Navigation</h5>
           <ul class="footer-links">
             <li><a href="#home" onclick="window.App.navigate('home'); return false;">Home</a></li>
-            <li><a href="#register" onclick="window.App.navigate('register-efir'); return false;">Register New E-FIR</a></li>
-            <li><a href="#track" onclick="window.App.navigate('track-efir'); return false;">Track E-FIR Status</a></li>
+            <li><a href="#register" onclick="window.App.navigate('register-efir'); return false;">Register New e-FIR</a></li>
+            <li><a href="#track" onclick="window.App.navigate('track-efir'); return false;">Track e-FIR Status</a></li>
             <li><a href="#view-fir" onclick="window.App.navigate('view-fir'); return false;">View / Download FIR</a></li>
             <li><a href="#directory" onclick="window.App.navigate('station-directory'); return false;">Police Station Directory</a></li>
           </ul>

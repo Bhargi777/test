@@ -1,5 +1,5 @@
 /**
- * Indian Police E-FIR Citizen Portal
+ * Indian Police e-FIR Citizen Portal
  * Master Application Controller & Router
  */
 
@@ -197,7 +197,7 @@
     } else {
       // Default: Read current active view text summary
       const activeView = document.querySelector(".page-view.active");
-      textToRead = activeView ? activeView.innerText : "Mumbai Police Citizen Services E-FIR Portal.";
+      textToRead = activeView ? activeView.innerText : "Mumbai Police Citizen Services e-FIR Portal.";
     }
 
     if (!textToRead.trim()) return;
@@ -353,7 +353,7 @@
   function submitTrackForm() {
     const input = document.getElementById("track-input-ref").value.trim();
     if (!input) {
-      showToast("Please enter an E-FIR reference number.", "warning");
+      showToast("Please enter an e-FIR reference number.", "warning");
       return;
     }
     searchAndRenderTimeline(input);
@@ -392,7 +392,7 @@
 
     // Timeline Steps State Calculation
     const timelineData = [
-      { id: "submitted", title: "E-FIR Submitted Online", desc: "Complaint submitted through portal with evidence attached.", completed: true },
+      { id: "submitted", title: "e-FIR Submitted Online", desc: "Complaint submitted through portal with evidence attached.", completed: true },
       { id: "verif", title: "DigiLocker Identity Verified", desc: `Citizen Aadhaar credential verified (${efir.digilocker?.txnRef || 'Verified'}).`, completed: !!efir.digilocker?.verified },
       { id: "esign", title: "Electronic Signature Sealed", desc: `Digital signature hash applied (${efir.esign?.txnRef || 'Completed'}).`, completed: !!efir.esign?.completed },
       { id: "auth", title: "Digital Authentication Completed", desc: "Transmission confirmed to jurisdictional police desk.", completed: true },
@@ -698,7 +698,7 @@
       });
     });
 
-    console.log("Indian Police E-FIR Citizen Portal initialized successfully.");
+    console.log("Indian Police e-FIR Citizen Portal initialized successfully.");
   }
 
   // Start when DOM ready
