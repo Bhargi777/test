@@ -236,7 +236,7 @@
       const stationCode = currentViewingEfir.incident.stationId || "CENTRAL";
       const randomFirNum = Math.floor(100 + Math.random() * 900);
       document.getElementById("modal-fir-number").value = `FIR/${stationCode}/2026/0${randomFirNum}`;
-      document.getElementById("modal-fir-sections").value = "Bharatiya Nyaya Sanhita (BNS) 2023 - Section 303(2) (Theft) / IPC Sec 379";
+      document.getElementById("modal-fir-sections").value = "Bharatiya Nagarik Suraksha Sanhita (BNSS) 2023 - Section 303(2) (Theft) / IPC Sec 379";
       document.getElementById("modal-fir-officer").value = "Sub-Inspector Arvind Rawat (Badge #SI-8841)";
       document.getElementById("modal-fir-remarks").value = "Cognizable offence established upon scrutinizing electronic statement and purchase invoice. Registered under official police seal.";
       modal.classList.add("active");

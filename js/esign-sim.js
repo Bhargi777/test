@@ -212,9 +212,6 @@
     window.App.navigate("auth-success");
     window.App.showToast(`E-FIR Authenticated: ${efir.id}`, "success");
 
-    // Notify citizen that police will make contact within 24 hours
-    const contactModal = document.getElementById("police-contact-modal");
-    if (contactModal) contactModal.classList.add("active");
   }
 
   // Expose API

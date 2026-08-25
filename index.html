@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Delhi Police Citizen Services • E-FIR Citizen Portal (Official Prototype)</title>
+  <title>Mumbai Police Citizen Services • E-FIR Citizen Portal (Official Prototype)</title>
   <link rel="stylesheet" href="css/styles.css">
-  <meta name="description" content="Delhi Police E-FIR Citizen Portal with Digital Identity Verification and Electronic Signature">
+  <meta name="description" content="Mumbai Police E-FIR Citizen Portal with Digital Identity Verification and Electronic Signature">
 </head>
 <body>
 
@@ -41,7 +41,7 @@
           </svg>
         </div>
         <div class="branding-text">
-          <h1 data-i18n="govTitle">Delhi Police Citizen Services</h1>
+          <h1 data-i18n="govTitle">Mumbai Police Citizen Services</h1>
           <p data-i18n="govSubtitle">Government of India • Ministry of Home Affairs Model Initiative</p>
         </div>
       </a>
@@ -116,7 +116,7 @@
       <div class="legal-banner" role="note">
         <span class="legal-banner-icon">⚖️</span>
         <div>
-          <strong data-i18n="legalPrincipleBanner">Important Legal Notice: Digital authentication confirms the electronic authenticity and identity of the submission. FIR registration remains strictly subject to applicable police scrutiny, jurisdiction verification, and legal requirements under the Bharatiya Nyaya Sanhita (BNS) / CrPC.</strong>
+          <strong data-i18n="legalPrincipleBanner">Important Legal Notice: Digital authentication confirms the electronic authenticity and identity of the submission. FIR registration remains strictly subject to applicable police scrutiny, jurisdiction verification, and legal requirements under the Bharatiya Nagarik Suraksha Sanhita (BNSS) / CrPC.</strong>
         </div>
       </div>
 
@@ -344,7 +344,7 @@
 
               <div class="form-group full-width">
                 <label class="form-label" for="field-informant-address"><span data-i18n="fieldAddress">Permanent / Current Address</span> <span class="required">*</span></label>
-                <input type="text" id="field-informant-address" class="form-control" placeholder="House/Flat No, Street, Landmark, Pin Code" value="H.No. 24, Vikas Marg, Near Laxmi Nagar Metro Station, Delhi - 110092" required>
+                <input type="text" id="field-informant-address" class="form-control" placeholder="House/Flat No, Street, Landmark, Pin Code" value="H.No. 24, S.V. Road, Near Bandra Station, Mumbai - 400050" required>
               </div>
 
               <!-- DUAL LANGUAGE SETTINGS (CRITICAL REQUIREMENT) -->
@@ -353,6 +353,7 @@
                 <select id="field-informant-interface-lang" class="form-control" onchange="window.App.setLanguage(this.value)">
                   <option value="en">English</option>
                   <option value="hi">हिन्दी (Hindi)</option>
+              <option value="mr">मराठी (Marathi)</option>
                 </select>
               </div>
 
@@ -361,6 +362,7 @@
                 <select id="field-informant-statement-lang" class="form-control">
                   <option value="en">English</option>
                   <option value="hi">हिन्दी (Hindi)</option>
+              <option value="mr">मराठी (Marathi)</option>
                 </select>
                 <span class="form-hint" data-i18n="langNote">You can use the portal in English while writing your statement in हिन्दी (or vice-versa).</span>
               </div>
@@ -393,7 +395,7 @@
               <div class="form-group">
                 <label class="form-label" for="field-incident-state"><span data-i18n="fieldState">State / UT</span> <span class="required">*</span></label>
                 <select id="field-incident-state" class="form-control">
-                  <option value="State NCT">State NCT</option>
+                  <option value="State Maharashtra">State Maharashtra</option>
                 </select>
               </div>
 
@@ -418,7 +420,7 @@
 
               <div class="form-group full-width">
                 <label class="form-label" for="field-incident-location"><span data-i18n="fieldIncidentLocation">Specific Incident Location / Landmark</span> <span class="required">*</span></label>
-                <input type="text" id="field-incident-location" class="form-control" placeholder="e.g. Near Metro Gate No. 2, Sector 15 Market" value="Near Metro Gate No. 2, Laxmi Nagar Market" required>
+                <input type="text" id="field-incident-location" class="form-control" placeholder="e.g. Near Metro Gate No. 2, Sector 15 Market" value="Near Bandra Station Gate No. 2, Linking Road Market" required>
               </div>
 
               <div class="form-group full-width">
@@ -468,7 +470,7 @@
                   🔊 Read Aloud
                 </button>
               </div>
-              <textarea id="field-statement-text" class="form-control" rows="8" placeholder="Describe the entire sequence of events clearly: what occurred, who was involved (if known), witnesses, loss or damages incurred, and any other relevant details..." required>On 22nd August 2026 at around 2:30 PM, I was walking near Metro Gate No. 2 at Laxmi Nagar Market when an unknown person on a two-wheeler snatched my iPhone 15 from my hand and fled towards the main road. I immediately raised an alarm but could not catch the accused. There were a few bystanders near the market who may have witnessed the incident. I request the police to register my complaint and take necessary action to trace my phone and apprehend the accused.</textarea>
+              <textarea id="field-statement-text" class="form-control" rows="8" placeholder="Describe the entire sequence of events clearly: what occurred, who was involved (if known), witnesses, loss or damages incurred, and any other relevant details..." required>On 22nd August 2026 at around 2:30 PM, I was walking near Bandra Station Gate No. 2 at Linking Road Market when an unknown person on a two-wheeler snatched my iPhone 15 from my hand and fled towards the main road. I immediately raised an alarm but could not catch the accused. There were a few bystanders near the market who may have witnessed the incident. I request the police to register my complaint and take necessary action to trace my phone and apprehend the accused.</textarea>
               <span class="form-hint" data-i18n="statementTips">Tips: Write chronologically. Mention any suspect details, vehicle registration numbers, or digital transaction IDs if applicable.</span>
             </div>
 
@@ -897,7 +899,7 @@
                 <h4 id="track-disp-ref" style="font-size:1.25rem; font-family:monospace; color:var(--color-primary-dark);">EFIR/2026/000123</h4>
               </div>
               <div>
-                <span id="track-disp-badge" class="status-badge badge-pending">Police Scrutiny Pending</span>
+                <span id="track-disp-badge" class="status-badge badge-pending">Under Review</span>
               </div>
             </div>
 
@@ -946,7 +948,7 @@
           <div class="review-summary-card" style="background:#f8fafc;">
             <h4 style="margin-bottom:8px;" data-i18n="officerRemarksTitle">Police Department Remarks & Updates:</h4>
             <p id="track-disp-remarks" style="font-size:0.875rem; color:var(--color-neutral-700); line-height:1.5;">
-              Police scrutiny is currently in progress.
+              Your E-FIR is currently under review.
             </p>
           </div>
         </div>
@@ -961,7 +963,7 @@
       <div class="concept-section" style="max-width: 420px; margin: 40px auto;">
         <div style="background:#1e293b; border-radius:var(--radius-lg) var(--radius-lg) 0 0; padding:28px 24px; text-align:center; color:#fff;">
           <div style="font-size:2.5rem; margin-bottom:8px;">👮</div>
-          <h3 style="font-size:1.25rem; font-weight:800; color:#fff;" data-i18n="officerLoginTitle">Delhi Police Officer Portal</h3>
+          <h3 style="font-size:1.25rem; font-weight:800; color:#fff;" data-i18n="officerLoginTitle">Mumbai Police Officer Portal</h3>
           <p style="font-size:0.8125rem; color:#94a3b8;" data-i18n="officerLoginSubtitle">Authorized Personnel Only • Station House Officer / Investigating Officer Login</p>
         </div>
         <div style="background:#fff; border:1px solid var(--color-neutral-200); border-top:none; border-radius:0 0 var(--radius-lg) var(--radius-lg); padding:24px;">
@@ -1271,7 +1273,7 @@
           <div class="doc-header-seal">
             <h2 data-i18n="ackHeaderTitle">GOVERNMENT STATE POLICE CITIZEN SERVICES</h2>
             <h3 data-i18n="ackDocTitle">E-FIR DIGITAL AUTHENTICATION ACKNOWLEDGEMENT RECEIPT</h3>
-            <p style="font-size: 0.75rem; color: #475569; margin-top: 4px;">Generated electronically via Official Delhi Police Citizen Services Gateway • Non-Repudiable Submission</p>
+            <p style="font-size: 0.75rem; color: #475569; margin-top: 4px;">Generated electronically via Official Mumbai Police Citizen Services Gateway • Non-Repudiable Submission</p>
           </div>
 
           <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px;">
@@ -1339,7 +1341,7 @@
             </div>
             <div style="text-align: right;">
               <div class="official-stamp-seal">DIGITALLY SEALED</div>
-              <div style="font-size: 0.75rem; color: #64748b; margin-top: 4px;">Delhi Police E-Services Desk</div>
+              <div style="font-size: 0.75rem; color: #64748b; margin-top: 4px;">Mumbai Police E-Services Desk</div>
             </div>
           </div>
         </div>
@@ -1378,7 +1380,7 @@
             <tr>
               <td class="label-cell">3. Acts & Sections:</td>
               <td colspan="3" id="fir-doc-sections" style="font-weight:700; color:#b45309;">
-                Bharatiya Nyaya Sanhita (BNS) 2023 - Section 303(2) (Theft)
+                Bharatiya Nagarik Suraksha Sanhita (BNSS) 2023 - Section 303(2) (Theft)
               </td>
             </tr>
             <tr>
@@ -1574,13 +1576,14 @@
           </div>
           <div class="form-group full-width">
             <label class="form-label"><span data-i18n="residentialAddress">Address</span> <span class="required">*</span></label>
-            <input type="text" id="reg-address-input" class="form-control" placeholder="Residential address" value="H.No. 24, Vikas Marg, Near Laxmi Nagar Metro Station, Delhi - 110092" required>
+            <input type="text" id="reg-address-input" class="form-control" placeholder="Residential address" value="H.No. 24, S.V. Road, Near Bandra Station, Mumbai - 400050" required>
           </div>
           <div class="form-group">
             <label class="form-label"><span data-i18n="preferredInterfaceLang">Interface Language</span></label>
             <select id="reg-intf-lang" class="form-control">
               <option value="en">English</option>
               <option value="hi">हिन्दी (Hindi)</option>
+              <option value="mr">मराठी (Marathi)</option>
             </select>
           </div>
           <div class="form-group">
@@ -1588,6 +1591,7 @@
             <select id="reg-stmt-lang" class="form-control">
               <option value="en">English</option>
               <option value="hi">हिन्दी (Hindi)</option>
+              <option value="mr">मराठी (Marathi)</option>
             </select>
           </div>
         </div>
@@ -1628,22 +1632,6 @@
     </div>
   </div>
 
-  <!-- Modal: Police Contact 24hr Notice -->
-  <div class="modal-overlay" id="police-contact-modal" role="dialog" aria-modal="true">
-    <div class="modal-box" style="max-width:440px;">
-      <div class="modal-body" style="text-align:center; padding-top:28px;">
-        <div style="font-size:2.75rem; margin-bottom:8px;">📞</div>
-        <h3 data-i18n="policeContact24Title" style="font-size:1.25rem; font-weight:800; color:var(--color-primary-dark); margin-bottom:10px;">E-FIR Submitted Successfully</h3>
-        <p data-i18n="policeContact24Body" style="font-size:0.9375rem; color:var(--color-neutral-600); line-height:1.6;">
-          Your complaint has been received. A police officer will contact you within 24 hours regarding this E-FIR.
-        </p>
-      </div>
-      <div class="modal-footer" style="justify-content:center;">
-        <button type="button" class="btn btn-primary btn-lg" onclick="document.getElementById('police-contact-modal').classList.remove('active')" data-i18n="policeContact24Ok">Okay, Got It</button>
-      </div>
-    </div>
-  </div>
-
   <!-- Modal: Police Register Formal FIR -->
   <div class="modal-overlay" id="police-fir-modal" role="dialog" aria-modal="true">
     <div class="modal-box">
@@ -1658,7 +1646,7 @@
         </div>
         <div class="form-group" style="margin-bottom:12px;">
           <label class="form-label" data-i18n="fieldSectionsOfLaw">Applicable Sections of Law</label>
-          <input type="text" id="modal-fir-sections" class="form-control" value="Bharatiya Nyaya Sanhita (BNS) 2023 - Section 303(2) (Theft) / IPC Sec 379">
+          <input type="text" id="modal-fir-sections" class="form-control" value="Bharatiya Nagarik Suraksha Sanhita (BNSS) 2023 - Section 303(2) (Theft) / IPC Sec 379">
         </div>
         <div class="form-group" style="margin-bottom:12px;">
           <label class="form-label" data-i18n="fieldOfficerAssigned">Investigating Officer (IO)</label>
@@ -1732,7 +1720,7 @@
     <div class="footer-container">
       <div class="footer-grid">
         <div class="footer-col">
-          <h5 data-i18n="govTitle">Delhi Police Citizen Services</h5>
+          <h5 data-i18n="govTitle">Mumbai Police Citizen Services</h5>
           <p style="font-size: 0.8125rem; line-height: 1.5; color: #94a3b8; margin-bottom: 12px;">
             A modern public-service digital initiative providing bilingual electronic FIR lodging, secure DigiLocker identity verification, and legally admissible electronic signatures.
           </p>
@@ -1770,7 +1758,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>© 2026 Delhi Police Citizen Services • Designed for Public Good & Digital Accessibility • All Rights Reserved (Prototype)</p>
+        <p>© 2026 Mumbai Police Citizen Services • Designed for Public Good & Digital Accessibility • All Rights Reserved (Prototype)</p>
       </div>
     </div>
   </footer>

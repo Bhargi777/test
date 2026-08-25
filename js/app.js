@@ -51,20 +51,24 @@
   }
 
   // Language Switcher
+  const LANG_CYCLE = ["en", "hi", "mr"];
+  const LANG_BTN_LABEL = { en: "🇮🇳 हिन्दी (Hindi)", hi: "🇮🇳 मराठी (Marathi)", mr: "🌐 English" };
+
   function toggleLanguage() {
     const currentLang = window.Store.getLang();
-    const newLang = currentLang === "en" ? "hi" : "en";
+    const currentIndex = LANG_CYCLE.indexOf(currentLang);
+    const newLang = LANG_CYCLE[(currentIndex + 1) % LANG_CYCLE.length];
     setLanguage(newLang);
   }
 
   function setLanguage(lang) {
     window.Store.setLang(lang);
     applyTranslations(lang);
-    
+
     // Update language switch button text
     const langBtn = document.getElementById("header-lang-btn");
     if (langBtn) {
-      langBtn.innerHTML = lang === "en" ? "🇮🇳 हिन्दी (Hindi)" : "🌐 English";
+      langBtn.innerHTML = LANG_BTN_LABEL[lang] || LANG_BTN_LABEL.en;
     }
 
     // Re-render dynamic active views if needed
@@ -193,14 +197,15 @@
     } else {
       // Default: Read current active view text summary
       const activeView = document.querySelector(".page-view.active");
-      textToRead = activeView ? activeView.innerText : "Delhi Police Citizen Services E-FIR Portal.";
+      textToRead = activeView ? activeView.innerText : "Mumbai Police Citizen Services E-FIR Portal.";
     }
 
     if (!textToRead.trim()) return;
 
     const lang = window.Store.getLang();
     const utterance = new SpeechSynthesisUtterance(textToRead);
-    utterance.lang = lang === "hi" ? "hi-IN" : "en-IN";
+    const speechLangMap = { hi: "hi-IN", mr: "mr-IN" };
+    utterance.lang = speechLangMap[lang] || "en-IN";
     utterance.rate = 0.95;
 
     utterance.onend = () => { isSpeaking = false; };
@@ -208,7 +213,8 @@
 
     isSpeaking = true;
     window.speechSynthesis.speak(utterance);
-    showToast(`Reading Aloud in ${lang === 'hi' ? 'हिन्दी' : 'English'}...`, "info");
+    const speechLabelMap = { hi: "हिन्दी", mr: "मराठी" };
+    showToast(`Reading Aloud in ${speechLabelMap[lang] || 'English'}...`, "info");
   }
 
   // Toast Notifications
@@ -390,17 +396,17 @@
       { id: "verif", title: "DigiLocker Identity Verified", desc: `Citizen Aadhaar credential verified (${efir.digilocker?.txnRef || 'Verified'}).`, completed: !!efir.digilocker?.verified },
       { id: "esign", title: "Electronic Signature Sealed", desc: `Digital signature hash applied (${efir.esign?.txnRef || 'Completed'}).`, completed: !!efir.esign?.completed },
       { id: "auth", title: "Digital Authentication Completed", desc: "Transmission confirmed to jurisdictional police desk.", completed: true },
-      { 
-        id: "scrutiny", 
-        title: "Police Scrutiny & Jurisdiction Check", 
-        desc: efir.status === "Additional Information Required" ? "Investigating Officer requested supplementary evidence." : "Station House Officer assessing facts and legal provisions.", 
+      {
+        id: "scrutiny",
+        title: "Under Review & Jurisdiction Check",
+        desc: efir.status === "Additional Information Required" ? "Investigating Officer requested supplementary evidence." : "Station House Officer assessing facts and legal provisions.",
         completed: efir.status === "FIR Registered" || efir.status === "Disposed / Non-Cognizable",
         active: efir.status === "Police Scrutiny Pending" || efir.status === "Additional Information Required"
       },
-      { 
-        id: "fir", 
-        title: efir.firDetails ? `FIR Registered (${efir.firDetails.firNumber})` : "Formal FIR Registration", 
-        desc: efir.firDetails ? `Registered under ${efir.firDetails.actsAndSections}` : "Subject to police scrutiny and legal satisfaction.", 
+      {
+        id: "fir",
+        title: efir.firDetails ? `FIR Registered (${efir.firDetails.firNumber})` : "Formal FIR Registration",
+        desc: efir.firDetails ? `Registered under ${efir.firDetails.actsAndSections}` : "Subject to review and legal satisfaction.",
         completed: efir.status === "FIR Registered",
         active: false
       }

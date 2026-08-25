@@ -54,7 +54,7 @@
       nameHi: "सेंट्रल पुलिस स्टेशन",
       district: "Central District",
       districtHi: "सेंट्रल जिला",
-      state: "State NCT",
+      state: "State Maharashtra",
       address: "Police Bhawan, Mall Road, Central City - 110001",
       sho: "Inspector Vikram Rathore",
       shoRank: "Station House Officer (SHO)",
@@ -70,7 +70,7 @@
       nameHi: "साइबर अपराध पुलिस स्टेशन",
       district: "Central District",
       districtHi: "सेंट्रल जिला",
-      state: "State NCT",
+      state: "State Maharashtra",
       address: "Cyber Cell Complex, 3rd Floor, Tech Enclave - 110002",
       sho: "Inspector Anjali Deshmukh",
       shoRank: "SHO (Cyber Crime)",
@@ -86,7 +86,7 @@
       nameHi: "वेस्ट कैंटोनमेंट पुलिस स्टेशन",
       district: "West District",
       districtHi: "वेस्ट जिला",
-      state: "State NCT",
+      state: "State Maharashtra",
       address: "Station Road, Cantonment Gate No. 2, West City - 110003",
       sho: "Inspector Harpreet Singh",
       shoRank: "Station House Officer",
@@ -102,7 +102,7 @@
       nameHi: "साउथ मेट्रो पुलिस स्टेशन",
       district: "South District",
       districtHi: "साउथ जिला",
-      state: "State NCT",
+      state: "State Maharashtra",
       address: "Near Metro Terminal 3, Ring Road, South City - 110004",
       sho: "Inspector Manoj Kumar Meena",
       shoRank: "Station House Officer",
@@ -136,7 +136,7 @@
         date: "2026-08-21",
         time: "18:45",
         location: "Central Metro Station Gate No. 2, Sector 15 Market",
-        state: "State NCT",
+        state: "State Maharashtra",
         district: "Central District",
         policeStation: "Central Police Station",
         stationId: "PS-01",
@@ -146,7 +146,7 @@
       },
       statement: {
         lang: "en",
-        text: "On 21st August 2026 around 6:45 PM, while exiting Central Metro Station Gate No. 2, an unidentified person wearing a black helmet on a red motorcycle (registration number partially noted as DL-03-XX-4912) snatched my Samsung Galaxy S23 (Black, IMEI 354892019284721) from my hand and fled towards Sector 16. The phone contained important work credentials and two banking SIM cards. Kindly investigate and trace the device."
+        text: "On 21st August 2026 around 6:45 PM, while exiting Central Metro Station Gate No. 2, an unidentified person wearing a black helmet on a red motorcycle (registration number partially noted as MH-01-XX-4912) snatched my Samsung Galaxy S23 (Black, IMEI 354892019284721) from my hand and fled towards Sector 16. The phone contained important work credentials and two banking SIM cards. Kindly investigate and trace the device."
       },
       documents: [
         { name: "Mobile_Purchase_Invoice_S23.pdf", size: "1.2 MB", type: "application/pdf", date: "2026-08-22" },
@@ -195,7 +195,7 @@
         date: "2026-08-19",
         time: "15:20",
         location: "Online / WhatsApp UPI Payment Scam",
-        state: "State NCT",
+        state: "State Maharashtra",
         district: "Central District",
         policeStation: "Cyber Crime Police Station",
         stationId: "PS-02",
@@ -262,7 +262,7 @@
         date: "2026-08-14",
         time: "20:00",
         location: "South Tech Park Bus Stop, Highway Corridor",
-        state: "State NCT",
+        state: "State Maharashtra",
         district: "South District",
         policeStation: "South Metro Police Station",
         stationId: "PS-04",
@@ -272,7 +272,7 @@
       },
       statement: {
         lang: "en",
-        text: "I parked my Royal Enfield Classic 350 (Color: Stealth Black, Reg No. DL-07-CK-9901, Engine No. RE350X89211) at the South Tech Park authorized parking area on 14th Aug at 8:00 PM. Upon returning at 10:30 PM, the motorcycle was missing. Parking attendant confirmed no knowledge. Original keys are in my possession. Please register FIR and initiate investigation."
+        text: "I parked my Royal Enfield Classic 350 (Color: Stealth Black, Reg No. MH-02-CK-9901, Engine No. RE350X89211) at the South Tech Park authorized parking area on 14th Aug at 8:00 PM. Upon returning at 10:30 PM, the motorcycle was missing. Parking attendant confirmed no knowledge. Original keys are in my possession. Please register FIR and initiate investigation."
       },
       documents: [
         { name: "Vehicle_RC_Copy.pdf", size: "1.5 MB", type: "application/pdf", date: "2026-08-15" },
@@ -295,9 +295,9 @@
       firDetails: {
         firNumber: "FIR/SOUTH/2026/0412",
         registeredDate: "2026-08-16 16:00",
-        actsAndSections: "Bharatiya Nyaya Sanhita (BNS) 2023 - Section 303(2) (Theft) / IPC Sec 379",
+        actsAndSections: "Bharatiya Nagarik Suraksha Sanhita (BNSS) 2023 - Section 303(2) (Theft) / IPC Sec 379",
         investigatingOfficer: "Sub-Inspector Arvind Rawat (Badge #SI-8841)",
-        shoRemarks: "Cognizable offence under BNS Sec 303(2) established on preliminary scrutiny of RC and parking area logs. Formal FIR registered. Auto-theft squad alerted across toll barriers."
+        shoRemarks: "Cognizable offence under BNSS Sec 303(2) established on preliminary scrutiny of RC and parking area logs. Formal FIR registered. Auto-theft squad alerted across toll barriers."
       },
       auditTrail: [
         { time: "2026-08-15 09:00:00", action: "E-FIR Form Submitted", actor: "Citizen (Sanath Kumar)", ref: "DRAFT/2026/00004" },
@@ -330,7 +330,7 @@
         date: "2026-08-22",
         time: "07:30",
         location: "City Park Jogging Track, Central District",
-        state: "State NCT",
+        state: "State Maharashtra",
         district: "Central District",
         policeStation: "Central Police Station",
         stationId: "PS-01",
@@ -489,7 +489,7 @@
     },
 
     setLang(lang) {
-      saveToStorage("current_lang", lang === "hi" ? "hi" : "en");
+      saveToStorage("current_lang", ["hi", "mr"].includes(lang) ? lang : "en");
     },
 
     getTextSize() {

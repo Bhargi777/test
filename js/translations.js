@@ -6,7 +6,7 @@
 const TRANSLATIONS = {
   en: {
     // Top Bar & Header
-    govTitle: "Delhi Police Citizen Services",
+    govTitle: "Mumbai Police Citizen Services",
     govSubtitle: "Government of India • Ministry of Home Affairs Model Initiative",
     portalName: "E-FIR Citizen Portal",
     emergencyHelpline: "Emergency: 112 | Cybercrime: 1930 | Women: 1091",
@@ -57,7 +57,7 @@ const TRANSLATIONS = {
     stage4Desc: "Receive authenticated reference number instantly and track police scrutiny in real-time.",
 
     // Core Legal Disclaimer Notice
-    legalPrincipleBanner: "Important Legal Notice: Digital authentication confirms the electronic authenticity and identity of the submission. FIR registration remains strictly subject to applicable police scrutiny, jurisdiction verification, and legal requirements under the Bharatiya Nyaya Sanhita (BNS) / CrPC.",
+    legalPrincipleBanner: "Important Legal Notice: Digital authentication confirms the electronic authenticity and identity of the submission. FIR registration remains strictly subject to applicable police scrutiny, jurisdiction verification, and legal requirements under the Bharatiya Nagarik Suraksha Sanhita (BNSS) / CrPC.",
 
     // Home Service Cards
     servicesTitle: "Citizen Police Services",
@@ -238,7 +238,7 @@ const TRANSLATIONS = {
     btnCompleteAuthentication: "Complete E-FIR Authentication",
 
     // Officer Login Page
-    officerLoginTitle: "Delhi Police Officer Portal",
+    officerLoginTitle: "Mumbai Police Officer Portal",
     officerLoginSubtitle: "Authorized Personnel Only • Station House Officer / Investigating Officer Login",
     officerLoginUsername: "Officer Username",
     officerLoginPassword: "Password",
@@ -258,13 +258,10 @@ const TRANSLATIONS = {
     stagePoliceScrutiny: "Police Scrutiny & Assessment",
     statusCompleted: "Completed",
     statusVerified: "Verified",
-    statusPending: "Pending Scrutiny",
+    statusPending: "Under Review",
     btnGoToDashboard: "Go to Dashboard",
     btnPrintAck: "Print / Download Acknowledgement",
     btnTrackNow: "Track This E-FIR",
-    policeContact24Title: "E-FIR Submitted Successfully",
-    policeContact24Body: "Your complaint has been received. A police officer will contact you within 24 hours regarding this E-FIR.",
-    policeContact24Ok: "Okay, Got It",
 
     // Acknowledgement Slip
     ackHeaderTitle: "GOVERNMENT STATE POLICE CITIZEN SERVICES",
@@ -274,14 +271,14 @@ const TRANSLATIONS = {
 
     // E-FIR Tracking
     trackTitle: "Track E-FIR Status",
-    trackSubtitle: "Enter your E-FIR Reference Number to check real-time scrutiny and registration status.",
+    trackSubtitle: "Enter your E-FIR Reference Number to check real-time review and registration status.",
     trackPlaceholder: "e.g. EFIR/2026/000123",
     btnTrackSubmit: "Track Status",
     recentSubmissions: "Quick Track Recent E-FIRs:",
     timelineTitle: "Progress Timeline",
     currentStageBadge: "Current Stage:",
     officerRemarksTitle: "Police Department Remarks & Updates:",
-    noRemarksYet: "Police scrutiny is currently in progress. Official remarks will appear here once reviewed by the Investigating Officer.",
+    noRemarksYet: "Your E-FIR is currently under review. Official remarks will appear here once reviewed by the Investigating Officer.",
 
     // Additional Information Flow
     addInfoRequiredTitle: "Additional Information Required",
@@ -330,7 +327,7 @@ const TRANSLATIONS = {
     // Modal Actions
     firRegModalTitle: "Register Formal Police FIR",
     fieldFirNumber: "Assign Formal FIR Number",
-    fieldSectionsOfLaw: "Applicable Sections of Law (e.g. BNS Sec 303(2), 318(4) / IPC)",
+    fieldSectionsOfLaw: "Applicable Sections of Law (e.g. BNSS Sec 303(2), 318(4) / IPC)",
     fieldOfficerAssigned: "Investigating Officer (IO) Name & Badge No.",
     fieldShoRemarks: "Station House Officer (SHO) Findings & Remarks",
     btnConfirmFirRegistration: "Confirm & Register FIR",
@@ -395,7 +392,7 @@ const TRANSLATIONS = {
     statusVerifFailed: "Verification Failed",
     statusEsignPending: "E-Sign Pending",
     statusAuthenticated: "Digital Authentication Completed",
-    statusPoliceScrutiny: "Police Scrutiny Pending",
+    statusPoliceScrutiny: "Under Review",
     statusAddInfoRequired: "Additional Information Required",
     statusFirRegistered: "FIR Registered",
     statusTransferred: "Transferred to Other Station",
@@ -422,9 +419,424 @@ const TRANSLATIONS = {
     viewDemoVideo: "View Interactive Demo Walkthrough"
   },
 
+  mr: {
+    // Top Bar & Header
+    govTitle: "मुंबई पोलीस नागरिक सेवा पोर्टल",
+    govSubtitle: "भारत सरकार • गृह मंत्रालय आदर्श उपक्रम",
+    portalName: "ई-एफआयआर नागरिक पोर्टल",
+    emergencyHelpline: "आणीबाणी: 112 | सायबर गुन्हे: 1930 | महिला हेल्पलाइन: 1091",
+    tagline: "सुरक्षित • पारदर्शक • पेपरलेस • नागरिक-केंद्रित",
+
+    // Navigation
+    navHome: "मुख्यपृष्ठ",
+    navRegisterEfir: "ई-एफआयआर नोंदवा",
+    navTrackEfir: "ई-एफआयआर ट्रॅक करा",
+    navViewFir: "एफआयआर पहा",
+    navDirectory: "पोलीस ठाणे निर्देशिका",
+    navFaq: "मदत व प्रश्नोत्तरे",
+    navContact: "संपर्क",
+    navPolicePortal: "पोलीस अधिकारी पोर्टल",
+    navCitizenPortal: "नागरिक पोर्टल",
+    navLogin: "नागरिक लॉगिन",
+    navRegister: "नोंदणी",
+    navLogout: "लॉगआउट",
+    navDashboard: "डॅशबोर्ड",
+
+    // Accessibility
+    accessibility: "सुलभता (Accessibility)",
+    textSize: "अक्षर आकार",
+    contrast: "कॉन्ट्रास्ट",
+    normalContrast: "सामान्य",
+    highContrast: "उच्च कॉन्ट्रास्ट",
+    readAloud: "मोठ्याने वाचा",
+    stopReading: "थांबवा",
+
+    // Hero Section
+    heroTitle: "तक्रार करा. सत्यापित करा. स्वाक्षरी करा. ट्रॅक करा.",
+    heroSubtitle: "आपली तक्रार इलेक्ट्रॉनिक पद्धतीने सादर करा आणि प्रत्यक्ष उपस्थितीशिवाय आपली ई-एफआयआर सुरक्षितपणे प्रमाणित करा.",
+    btnRegisterEfir: "ई-एफआयआर नोंदवा",
+    btnTrackEfir: "ई-एफआयआर ट्रॅक करा",
+    btnPoliceLogin: "अधिकारी प्रवेश",
+    heroNotice: "अधिकृत प्रोटोटाइप • सिम्युलेटेड डिजिलॉकर व ओटीपी ई-स्वाक्षरीद्वारे तत्काळ डिजिटल ओळख पडताळणी.",
+
+    // 4-Stage Concept
+    conceptTitle: "डिजिटल ई-एफआयआर प्रमाणीकरण कसे कार्य करते",
+    conceptSubtitle: "कुठूनही आपली तक्रार सुरक्षितपणे नोंदवण्यासाठी व डिजिटली प्रमाणित करण्यासाठी चार सोपे टप्पे.",
+    stage1Title: "1. सादर करा",
+    stage1Desc: "आपल्या पसंतीच्या भाषेत तक्रारदार, घटना तपशील आणि सविस्तर जबाब भरा.",
+    stage2Title: "2. पडताळणी",
+    stage2Desc: "सिम्युलेटेड डिजिलॉकर प्राधिकरणाद्वारे आपली नागरिक ओळख सुरक्षितपणे डिजिटल पद्धतीने पडताळा.",
+    stage3Title: "3. ई-स्वाक्षरी",
+    stage3Desc: "सुरक्षित सिम्युलेटेड मोबाइल ओटीपीद्वारे आपल्या जबाबावर इलेक्ट्रॉनिक स्वाक्षरी करा.",
+    stage4Title: "4. ट्रॅक करा",
+    stage4Desc: "त्वरित प्रमाणित संदर्भ क्रमांक मिळवा आणि पोलीस पुनरावलोकनाची स्थिती प्रत्यक्ष वेळेत ट्रॅक करा.",
+
+    // Core Legal Disclaimer Notice
+    legalPrincipleBanner: "महत्त्वाची कायदेशीर सूचना: डिजिटल प्रमाणीकरण केवळ नोंदणीच्या इलेक्ट्रॉनिक सत्यतेची व नागरिक ओळखीची खात्री देते. औपचारिक एफआयआर नोंदणी भारतीय नागरिक सुरक्षा संहिता (BNSS) / फौजदारी प्रक्रिया संहितेअंतर्गत पोलीस पडताळणी व अधिकारक्षेत्र तपासणीच्या अधीन राहील.",
+
+    // Home Service Cards
+    servicesTitle: "नागरिक पोलीस सेवा",
+    cardRegisterTitle: "नवीन ई-एफआयआर नोंदवा",
+    cardRegisterDesc: "डिजिटल पडताळणीसह अदखलपात्र व निर्दिष्ट दखलपात्र तक्रारी नोंदवा.",
+    cardTrackTitle: "ई-एफआयआर स्थिती ट्रॅक करा",
+    cardTrackDesc: "प्रत्यक्ष वेळेतील पुनरावलोकन स्थिती, अधिकारी अद्ययावतता आणि नोंदणी प्रगती पहा.",
+    cardViewFirTitle: "एफआयआर पहा / डाउनलोड करा",
+    cardViewFirDesc: "डिजिटल पोलीस पडताळणी शिक्क्यासह अधिकृतपणे नोंदणीकृत एफआयआर प्रत मिळवा.",
+    cardDirectoryTitle: "ठाणे निर्देशिका",
+    cardDirectoryDesc: "संपर्क क्रमांक, अधिकारक्षेत्रातील ठाण्यांचे पत्ते आणि SHO तपशील शोधा.",
+    cardEmergencyTitle: "आणीबाणी संपर्क",
+    cardEmergencyDesc: "तत्काळ आणीबाणी, सायबर व अग्निशमन सहाय्यासाठी थेट हेल्पलाइन क्रमांक.",
+    cardFaqTitle: "मदत व प्रश्नोत्तरे",
+    cardFaqDesc: "ई-पडताळणी, ई-स्वाक्षरी व कायदेशीर प्रक्रियेबाबत वारंवार विचारले जाणारे प्रश्न.",
+
+    // Citizen Login & Registration
+    loginTitle: "नागरिक लॉगिन",
+    loginSubtitle: "आपल्या नोंदणीकृत मोबाइल क्रमांक व सिम्युलेटेड ओटीपीने लॉगिन करा.",
+    regTitle: "नागरिक नोंदणी",
+    regSubtitle: "ई-एफआयआर सादर करण्यासाठी व पोलीस विभागाच्या प्रतिसादांचा मागोवा घेण्यासाठी नोंदणी करा.",
+    fullName: "पूर्ण नाव (ओळखपत्राप्रमाणे)",
+    mobileNumber: "मोबाइल क्रमांक",
+    emailAddress: "ईमेल पत्ता",
+    residentialAddress: "निवासी पत्ता",
+    age: "वय / जन्मतारीख",
+    preferredInterfaceLang: "पसंतीची इंटरफेस भाषा",
+    preferredStatementLang: "पसंतीची जबाब भाषा",
+    enterMobile: "10 अंकी मोबाइल क्रमांक टाका",
+    enterOtp: "6 अंकी ओटीपी टाका",
+    sendOtp: "ओटीपी पाठवा",
+    verifyLogin: "पडताळा व लॉगिन करा",
+    btnRegister: "खाते नोंदवा",
+    demoCitizens: "जलद डेमो नागरिक लॉगिन:",
+    otpHelper: "प्रोटोटाइप मोड: कोणताही 6 अंकी ओटीपी (किंवा 'डेमो ओटीपी वापरा: 123456' वर क्लिक करा) यशस्वी होईल.",
+    useDemoOtp: "डेमो ओटीपी भरा (123456)",
+
+    // Citizen Dashboard
+    welcome: "स्वागत आहे",
+    citizenDashboard: "नागरिक सेवा डॅशबोर्ड",
+    quickActions: "जलद कृती",
+    myEfirs: "माझ्या ई-एफआयआर तक्रारी",
+    myDrafts: "जतन केलेले मसुदे",
+    notifications: "सूचना",
+    noEfirsFound: "अद्याप कोणतीही ई-एफआयआर सादर केलेली नाही. सुरू करण्यासाठी 'ई-एफआयआर नोंदवा' वर क्लिक करा.",
+    noDraftsFound: "कोणताही जतन केलेला मसुदा सापडला नाही.",
+    colRefNo: "ई-एफआयआर संदर्भ",
+    colDate: "सादरीकरण तारीख",
+    colStation: "पोलीस ठाणे",
+    colOffence: "गुन्हा प्रकार",
+    colStatus: "सद्य स्थिती",
+    colLastUpdate: "शेवटचे अद्ययावत",
+    colActions: "कृती",
+    btnViewDetails: "तपशील पहा",
+    btnTrack: "स्थिती ट्रॅक करा",
+    btnResumeDraft: "मसुदा सुरू ठेवा",
+    btnDeleteDraft: "हटवा",
+    btnDownloadAck: "पावती डाउनलोड करा",
+
+    // Multi-Step E-FIR Wizard
+    wizardTitle: "नवीन ई-एफआयआर नोंदवा",
+    wizardSubtitle: "डिजिटल पडताळणीसाठी आपली तक्रार सादर करण्यासाठी खालील 5 टप्पे पूर्ण करा.",
+    step1: "1. तक्रारदार तपशील",
+    step2: "2. घटना तपशील",
+    step3: "3. जबाब",
+    step4: "4. सहाय्यक कागदपत्रे",
+    step5: "5. पुनरावलोकन व पुष्टी",
+
+    // Step 1: Informant
+    step1Title: "टप्पा 1: तक्रारदाराचे तपशील",
+    step1Desc: "ही इलेक्ट्रॉनिक तक्रार दाखल करणाऱ्या व्यक्तीचे सत्यापित ओळख तपशील द्या.",
+    fieldFullName: "पूर्ण नाव",
+    fieldMobile: "मोबाइल क्रमांक",
+    fieldEmail: "ईमेल पत्ता",
+    fieldAddress: "कायमचा / सध्याचा पत्ता",
+    fieldAge: "वय / जन्मतारीख",
+    fieldInterfaceLang: "पोर्टल इंटरफेस भाषा",
+    fieldStatementLang: "जबाब भाषा",
+    langNote: "आपण पोर्टल इंग्रजीत वापरत असतानाही आपला जबाब मराठीत लिहू शकता (किंवा उलट).",
+
+    // Step 2: Incident
+    step2Title: "टप्पा 2: घटना व स्थळ तपशील",
+    step2Desc: "अचूक घटना तपशील पोलिसांना अधिकारक्षेत्र निश्चित करण्यास व तात्काळ कारवाईस मदत करतात.",
+    fieldIncidentDate: "घटनेची तारीख",
+    fieldIncidentTime: "अंदाजे वेळ",
+    fieldIncidentLocation: "विशिष्ट घटनास्थळ / खूणस्थान",
+    fieldState: "राज्य / केंद्रशासित प्रदेश",
+    fieldDistrict: "जिल्हा / शहर",
+    fieldPoliceStation: "अधिकारक्षेत्रातील पोलीस ठाणे",
+    fieldOffenceCategory: "गुन्ह्याचे स्वरूप / प्रकार",
+    fieldIncidentSummary: "थोडक्यात सारांश (एक ओळ)",
+    selectState: "-- राज्य निवडा --",
+    selectDistrict: "-- जिल्हा निवडा --",
+    selectStation: "-- पोलीस ठाणे निवडा --",
+    selectOffence: "-- गुन्हा प्रकार निवडा --",
+
+    // Step 3: Statement
+    step3Title: "टप्पा 3: सविस्तर तक्रार जबाब",
+    step3Desc: "आपल्या निवडलेल्या भाषेत आपला जबाब द्या.",
+    statementLangIndicator: "सध्याची जबाब भाषा:",
+    statementPlaceholder: "घटनाक्रम स्पष्टपणे लिहा: काय घडले, कोण सामील होते (माहीत असल्यास), साक्षीदार, झालेले नुकसान किंवा चोरी झालेल्या वस्तू आणि इतर संबंधित तपशील...",
+    statementTips: "टीप: घटनाक्रमानुसार लिहा. लागू असल्यास संशयिताचे तपशील, वाहन क्रमांक किंवा डिजिटल व्यवहार आयडी नमूद करा.",
+    btnSpeechToText: "बोलून लिहा (आवाज इनपुट)",
+    btnTransliterationHelp: "मराठी टायपिंग सहाय्य",
+
+    // Step 4: Documents
+    step4Title: "टप्पा 4: सहाय्यक पुरावे व कागदपत्रे",
+    step4Desc: "फोटो, बिले, ओळखपत्र प्रती, बँक व्यवहार स्क्रीनशॉट किंवा व्हिडिओ यांसारखे संबंधित पुरावे अपलोड करा.",
+    uploadZoneText: "फाइल्स येथे ड्रॅग करा, किंवा ब्राउझ करण्यासाठी क्लिक करा",
+    uploadFormats: "स्वीकृत स्वरूप: PDF, JPG, PNG, MP4, DOCX (प्रति फाइल कमाल 25MB • प्रोटोटाइप सिम्युलेटेड अपलोड)",
+    sampleEvidencePresets: "नमुना प्रात्यक्षिक पुरावा जोडा:",
+    btnAttachSampleId: "+ नमुना ओळखपत्र (Aadhaar/Voter ID.pdf)",
+    btnAttachSampleBill: "+ नमुना खरेदी पावती / नुकसान बिल.pdf)",
+    btnAttachSamplePhoto: "+ नमुना घटनास्थळ फोटो.jpg",
+    btnAttachSampleChat: "+ नमुना फसवणूक स्क्रीनशॉट.png",
+    uploadedFilesList: "अपलोड केलेली कागदपत्रे व पुरावे:",
+    noFilesUploaded: "अद्याप कोणतेही कागदपत्र जोडलेले नाही.",
+    removeFile: "काढा",
+
+    // Step 5: Review
+    step5Title: "टप्पा 5: सादरीकरणाचे पुनरावलोकन व पुष्टी",
+    step5Desc: "सिम्युलेटेड डिजिलॉकर ओळख पडताळणी सुरू करण्यापूर्वी सर्व तपशील काळजीपूर्वक तपासा.",
+    sectionInformant: "तक्रारदार सारांश",
+    sectionIncident: "घटना सारांश",
+    sectionStatement: "जबाब सारांश",
+    sectionDocuments: "जोडलेली कागदपत्रे",
+    btnEditSection: "संपादित करा",
+    confirmReviewCheckbox: "मी वरील सर्व माहितीचे पुनरावलोकन केले असून ती माझ्या माहितीनुसार सत्य आहे याची पुष्टी करतो/करते.",
+    btnProceedToVerification: "ई-पडताळणीकडे पुढे जा",
+    btnSaveDraft: "मसुदा जतन करा",
+    btnPrevious: "मागील",
+    btnNext: "पुढील टप्पा",
+    draftSavedMsg: "मसुदा यशस्वीरित्या जतन झाला, संदर्भ क्रमांक:",
+
+    // E-Verification (DigiLocker Simulation)
+    eVerifTitle: "डिजिटल ओळख पडताळणी",
+    eVerifSubtitle: "आपली ई-एफआयआर डिजिटली प्रमाणित करण्यासाठी आपली ओळख पडताळा.",
+    eVerifExplain: "आपण इलेक्ट्रॉनिक स्वाक्षरी करण्यापूर्वी आपली ओळख अधिकृत डिजिलॉकर प्रक्रियेद्वारे पडताळली जाईल.",
+    btnVerifyWithDigilocker: "डिजिलॉकरने पडताळा",
+    simulatedTag: "प्रोटोटाइप / सिम्युलेटेड पडताळणी",
+    digiLockerHeader: "डिजिलॉकर डिजिटल ओळख गेटवे",
+    digiConsentTitle: "ओळख पडताळणीसाठी संमती",
+    digiInfoRequested: "विनंती केलेली माहिती: पूर्ण नाव, मास्क केलेला आधार क्रमांक, जन्मतारीख, लिंग, पडताळलेला पत्ता टोकन.",
+    digiPurpose: "उद्देश: पोलीस विभागाकडे ई-एफआयआर सादरीकरणाचे डिजिटल प्रमाणीकरण व अकाट्यता.",
+    digiPrivacy: "गोपनीयता सूचना: आयटी कायदा 2000 व डिजिटल वैयक्तिक डेटा संरक्षणानुसार, केवळ पडताळलेले गुणधर्म टोकन सामायिक केले जातात.",
+    digiConsentCheck: "या ई-एफआयआरच्या प्रमाणीकरणासाठी माझ्या ओळखीच्या पडताळणीस मी संमती देतो/देते.",
+    btnGiveConsent: "संमती द्या व पडताळा",
+    verifyingIdentity: "डिजिलॉकरद्वारे ओळख पडताळत आहे...",
+    verifyingSubtext: "सुरक्षित गेटवेशी संपर्क साधत आहे • नागरिक ओळख हॅश तपासत आहे...",
+    identityVerifiedSuccess: "ओळख यशस्वीरित्या पडताळली गेली",
+    verifStatus: "ओळख पडताळणी: पडताळलेली",
+    verifDateTime: "पडताळणी वेळ:",
+    verifTxnRef: "व्यवहार संदर्भ:",
+    verifIssuer: "पडताळणी प्राधिकरण: डिजिलॉकर सिम्युलेटेड गेटवे (भारत सरकार)",
+    btnContinueToEsign: "ई-स्वाक्षरीकडे पुढे जा",
+
+    // E-Signature (Simulated)
+    eSignTitle: "इलेक्ट्रॉनिक स्वाक्षरी",
+    eSignSubtitle: "स्वाक्षरी करण्यापूर्वी कृपया आपल्या जबाबाचे काळजीपूर्वक पुनरावलोकन करा.",
+    eSignStatementReview: "डिजिटली स्वाक्षरी केला जाणारा अंतिम ई-एफआयआर जबाब:",
+    eSignDeclaration: "मी जबाबाचे पुनरावलोकन केले असून तो माझ्या खऱ्या व अचूक सादरीकरणाचे प्रतिनिधित्व करतो याची मी पुष्टी करतो/करते.",
+    eSignSignatureLabel: "आपल्या स्वाक्षरीची प्रतिमा अपलोड करा",
+    eSignSignatureHint: "आपल्या हस्तलिखित स्वाक्षरीची स्पष्ट प्रतिमा (JPG/PNG) अपलोड करा. प्रोटोटाइप मोड: कोणतीही प्रतिमा चालेल.",
+    btnUploadSignature: "📤 स्वाक्षरी प्रतिमा अपलोड करा",
+    btnRemoveSignature: "काढा",
+    eSignSignaturePreviewAlt: "अपलोड केलेल्या स्वाक्षरीचे पूर्वावलोकन",
+    eSignSignatureRequired: "पुढे जाण्यापूर्वी कृपया आपल्या स्वाक्षरीची प्रतिमा अपलोड करा.",
+    eSignSignatureCaptured: "स्वाक्षरी प्रतिमा कॅप्चर केली:",
+    btnProceedToEsign: "ई-स्वाक्षरीकडे पुढे जा",
+    eSignModalTitle: "सिम्युलेटेड ई-स्वाक्षरी पडताळणी",
+    eSignMobileDisplay: "नोंदणीकृत मोबाइल क्रमांक:",
+    eSignOtpLabel: "आधार / मोबाइल ई-स्वाक्षरी ओटीपी टाका:",
+    btnVerifyAndSign: "पडताळा व स्वाक्षरी करा",
+    eSignCompletedTitle: "ई-स्वाक्षरी पूर्ण झाली",
+    eSignStatus: "स्वाक्षरी स्थिती: पूर्ण व क्रिप्टोग्राफिकदृष्ट्या सुरक्षित",
+    eSignCertRef: "डिजिटल प्रमाणपत्र हॅश:",
+    eSignTimestamp: "वेळ:",
+    btnCompleteAuthentication: "ई-एफआयआर प्रमाणीकरण पूर्ण करा",
+
+    // Officer Login Page
+    officerLoginTitle: "मुंबई पोलीस अधिकारी पोर्टल",
+    officerLoginSubtitle: "केवळ अधिकृत कर्मचारी • ठाणे प्रभारी अधिकारी / तपास अधिकारी लॉगिन",
+    officerLoginUsername: "अधिकारी वापरकर्तानाव",
+    officerLoginPassword: "पासवर्ड",
+    officerLoginHint: "प्रोटोटाइप मोड: डेमो माहिती आधीच भरलेली आहे (admin / admin).",
+    btnOfficerLogin: "अधिकारी पोर्टलमध्ये लॉगिन करा",
+    btnBackToCitizenSite: "नागरिक साइटवर परत जा",
+
+    // Final Authentication Page
+    authSuccessTitle: "ई-एफआयआर यशस्वीरित्या प्रमाणित झाली",
+    authSuccessSubtitle: "आपली इलेक्ट्रॉनिक तक्रार डिजिटली प्रमाणित करून अधिकारक्षेत्रातील पोलीस ठाण्याकडे पाठवण्यात आली आहे.",
+    permanentRefNo: "ई-एफआयआर संदर्भ क्रमांक:",
+    submissionStages: "प्रमाणीकरण व पुनरावलोकन टप्पे",
+    stageSubmitted: "ई-एफआयआर सादर केली",
+    stageIdentityVerif: "ओळख पडताळणी (डिजिलॉकर)",
+    stageEsignature: "ई-स्वाक्षरी (इलेक्ट्रॉनिक शिक्का)",
+    stageDigitalAuth: "डिजिटल प्रमाणीकरण",
+    stagePoliceScrutiny: "पोलीस पुनरावलोकन व मूल्यांकन",
+    statusCompleted: "पूर्ण",
+    statusVerified: "पडताळलेले",
+    statusPending: "पुनरावलोकनाधीन",
+    btnGoToDashboard: "डॅशबोर्डवर जा",
+    btnPrintAck: "पावती प्रिंट / डाउनलोड करा",
+    btnTrackNow: "ही ई-एफआयआर ट्रॅक करा",
+
+    // Acknowledgement Slip
+    ackHeaderTitle: "राज्य पोलीस नागरिक सेवा • भारत सरकार आदर्श पोर्टल",
+    ackDocTitle: "ई-एफआयआर डिजिटल प्रमाणीकरण पावती",
+    ackDisclaimerText: "महत्त्वाची कायदेशीर सूचना: डिजिटल प्रमाणीकरण केवळ सादरीकरणाच्या इलेक्ट्रॉनिक प्रमाणीकरणाची पुष्टी करते. एफआयआर नोंदणी फौजदारी प्रक्रिया संहिता / भारतीय नागरिक सुरक्षा संहितेअंतर्गत लागू पोलीस प्रक्रिया व कायदेशीर आवश्यकतांच्या अधीन आहे.",
+    ackPrintBtn: "पावती प्रिंट करा",
+
+    // E-FIR Tracking
+    trackTitle: "ई-एफआयआर स्थिती ट्रॅक करा",
+    trackSubtitle: "प्रत्यक्ष वेळेतील पुनरावलोकन व नोंदणी स्थिती तपासण्यासाठी आपला ई-एफआयआर संदर्भ क्रमांक टाका.",
+    trackPlaceholder: "उदा. EFIR/2026/000123",
+    btnTrackSubmit: "स्थिती तपासा",
+    recentSubmissions: "अलीकडील ई-एफआयआर जलद ट्रॅक करा:",
+    timelineTitle: "प्रगती कालरेषा",
+    currentStageBadge: "सद्य टप्पा:",
+    officerRemarksTitle: "पोलीस विभागाची टिपणी व अद्ययावतता:",
+    noRemarksYet: "आपली ई-एफआयआर सध्या पुनरावलोकनाधीन आहे. तपास अधिकाऱ्याने पुनरावलोकन केल्यानंतर अधिकृत टिपणी येथे दिसेल.",
+
+    // Additional Information Flow
+    addInfoRequiredTitle: "अतिरिक्त माहिती आवश्यक",
+    addInfoRequiredDesc: "तपास अधिकाऱ्याने या ई-एफआयआरबाबत अतिरिक्त तपशील किंवा स्पष्टीकरण मागितले आहे.",
+    officerQuery: "अधिकाऱ्याची विचारणा / आवश्यकता:",
+    deadlineText: "उत्तर देण्याची अंतिम मुदत:",
+    fieldAdditionalText: "आपले पूरक विवरण / स्पष्टीकरण",
+    fieldAdditionalUpload: "अतिरिक्त पुरावा / कागदपत्रे अपलोड करा",
+    btnSubmitAdditionalInfo: "अतिरिक्त माहिती सादर करा",
+    additionalInfoSubmittedSuccess: "पूरक माहिती पोलीस अधिकाऱ्याला यशस्वीरित्या पाठवण्यात आली आहे.",
+
+    // Police Officer Portal
+    policePortalTitle: "पोलीस अधिकारी प्रशासन पोर्टल",
+    policePortalSubtitle: "ठाणे प्रभारी अधिकारी (SHO) व तपास अधिकारी (IO) पुनरावलोकन कक्ष",
+    kpiTotal: "एकूण ई-एफआयआर",
+    kpiNew: "नवीन सादरीकरणे",
+    kpiVerified: "डिजिटल प्रमाणित",
+    kpiPendingScrutiny: "पुनरावलोकन प्रलंबित",
+    kpiAddInfoReq: "अतिरिक्त माहिती आवश्यक",
+    kpiFirRegistered: "नोंदणीकृत एफआयआर",
+    policeFilterStation: "ठाण्यानुसार फिल्टर:",
+    policeFilterStatus: "स्थितीनुसार फिल्टर:",
+    allStations: "सर्व पोलीस ठाणी",
+    allStatuses: "सर्व स्थिती",
+    thEfirNo: "ई-एफआयआर संदर्भ",
+    thInformant: "तक्रारदाराचे नाव",
+    thStation: "पोलीस ठाणे",
+    thOffence: "गुन्हा प्रकार",
+    thStatus: "पुनरावलोकन स्थिती",
+    thDate: "प्राप्ती तारीख",
+    thActions: "कृती",
+    btnReviewEfir: "पुनरावलोकन करा",
+
+    // Police E-FIR Scrutiny Page
+    policeReviewTitle: "ई-एफआयआर सविस्तर पुनरावलोकन व मूल्यांकन",
+    badgeAuthSuccess: "डिजिटल प्रमाणीकरण पूर्ण",
+    badgeIdentityVerified: "डिजिलॉकर ओळख पडताळलेली",
+    badgeEsignDone: "ई-स्वाक्षरी प्रमाणित",
+    policeActionsTitle: "पोलीस अधिकारी कृती",
+    policeNotice: "औपचारिक एफआयआर नोंदणी किंवा पुढील चौकशीचा निर्णय घेण्यापूर्वी सर्व पुरावे, पडताळलेली ओळख व जबाब यांचे पुनरावलोकन करा.",
+    btnProceedFir: "एफआयआर नोंदणीसाठी पुढे जा",
+    btnRequestMoreInfo: "अतिरिक्त माहितीची विनंती करा",
+    btnReferStation: "योग्य पोलीस ठाण्याकडे पाठवा",
+    btnMarkNonCog: "अदखलपात्र / दिवाणी प्रकरण म्हणून चिन्हांकित करा",
+
+    // Modal Actions
+    firRegModalTitle: "औपचारिक पोलीस एफआयआर नोंदवा",
+    fieldFirNumber: "औपचारिक एफआयआर क्रमांक द्या",
+    fieldSectionsOfLaw: "लागू कायदेशीर कलमे (उदा. BNSS कलम 303(2), 318(4) / IPC)",
+    fieldOfficerAssigned: "तपास अधिकारी (IO) नाव व बॅज क्रमांक",
+    fieldShoRemarks: "ठाणे प्रभारी अधिकारी (SHO) निष्कर्ष व शेरा",
+    btnConfirmFirRegistration: "पुष्टी करा व एफआयआर नोंदवा",
+
+    reqInfoModalTitle: "नागरिकाकडून अतिरिक्त माहिती मागवा",
+    fieldClarificationQuery: "तक्रारदाराकडून आवश्यक स्पष्टीकरण / पुरावा नमूद करा",
+    fieldDeadline: "उत्तराची अंतिम तारीख",
+    btnSendInfoRequest: "नागरिकाला विनंती पाठवा",
+
+    transferModalTitle: "दुसऱ्या पोलीस ठाण्याकडे पाठवा / हस्तांतरित करा",
+    fieldTargetStation: "लक्ष्य अधिकारक्षेत्रातील पोलीस ठाणे",
+    fieldTransferReason: "अधिकारक्षेत्र हस्तांतरणाचे कारण",
+    btnConfirmTransfer: "ई-एफआयआर हस्तांतरित करा",
+
+    // Audit Trail
+    auditTrailTitle: "क्रिप्टोग्राफिक ऑडिट ट्रेल व क्रियाकलाप नोंद",
+    auditTime: "वेळ",
+    auditAction: "कृती / घटना",
+    auditActor: "कर्ता / प्रणाली",
+    auditRef: "क्रिप्टोग्राफिक हॅश / टोकन",
+
+    // View FIR
+    viewFirTitle: "अधिकृत पोलीस एफआयआर पहा / डाउनलोड करा",
+    viewFirSubtitle: "नोंदणीकृत प्रथम खबरी अहवालाच्या पडताळलेल्या प्रती शोधा व मिळवा.",
+    searchFirPlaceholder: "एफआयआर क्रमांक टाका (उदा. FIR/CENTRAL/2026/0412)",
+    btnSearchFir: "एफआयआर शोधा",
+    officialFirDocument: "राज्य पोलीस विभाग • प्रथम खबरी अहवाल",
+    firUnderSection: "(फौजदारी प्रक्रिया संहिता कलम 154 / भारतीय नागरिक सुरक्षा संहिता कलम 173 अंतर्गत)",
+    firDistrict: "जिल्हा:",
+    firStation: "पोलीस ठाणे:",
+    firYear: "वर्ष:",
+    firNumberLabel: "एफआयआर क्रमांक:",
+    firDateLabel: "दिनांक व वेळ:",
+    firActSections: "लागू कायदा व कलमे:",
+    firComplainant: "तक्रारदाराचे तपशील:",
+    firOccurrence: "घटनेचे व स्थळाचे तपशील:",
+    firStatementLabel: "प्रथम खबरीची मजकूर / जबाब:",
+    firShoSign: "ठाणे प्रभारी अधिकाऱ्याद्वारे डिजिटली मान्यताप्राप्त",
+    btnPrintFir: "अधिकृत एफआयआर प्रत प्रिंट करा",
+
+    // Police Station Directory
+    directoryTitle: "पोलीस ठाणे निर्देशिका",
+    directorySubtitle: "अधिकारक्षेत्रातील पोलीस ठाणी, संपर्क क्रमांक व ठाणे प्रभारी अधिकाऱ्यांचे तपशील शोधा.",
+    searchStationPlaceholder: "ठाण्याचे नाव, परिसर किंवा खूणस्थानाने शोधा...",
+    btnFindNearest: "जवळचे पोलीस ठाणे शोधा",
+    stationAddress: "पत्ता:",
+    stationSho: "प्रभारी अधिकारी (SHO):",
+    stationPhone: "लँडलाइन / नियंत्रण कक्ष:",
+    stationMobile: "आणीबाणी मोबाइल:",
+    stationEmail: "अधिकृत ईमेल:",
+    stationJurisdiction: "अधिकारक्षेत्र:",
+
+    // Help & FAQ
+    faqTitle: "वारंवार विचारले जाणारे प्रश्न व मदत मार्गदर्शक",
+    faqSubtitle: "डिजिटल ई-एफआयआर सादरीकरण, डिजिलॉकर पडताळणी व कायदेशीर प्रक्रियेबाबत उत्तरे शोधा.",
+    faqSearchPlaceholder: "प्रश्न शोधा...",
+
+    // Statuses
+    statusDraft: "मसुदा",
+    statusSubmitted: "सादर केलेली",
+    statusVerifPending: "पडताळणी प्रलंबित",
+    statusVerifFailed: "पडताळणी अयशस्वी",
+    statusEsignPending: "ई-स्वाक्षरी प्रलंबित",
+    statusAuthenticated: "डिजिटल प्रमाणीकरण पूर्ण",
+    statusPoliceScrutiny: "पुनरावलोकनाधीन",
+    statusAddInfoRequired: "अतिरिक्त माहिती आवश्यक",
+    statusFirRegistered: "एफआयआर नोंदणीकृत",
+    statusTransferred: "अन्य ठाण्याकडे हस्तांतरित",
+    statusClosedNonCog: "निकाली / अदखलपात्र",
+
+    // Security & Privacy
+    privacyTitle: "सुरक्षा, गोपनीयता व डेटा किमानीकरण चौकट",
+    privacySubtitle: "नागरिक ओळख व इलेक्ट्रॉनिक तक्रार डेटा कसा सुरक्षित ठेवला जातो.",
+
+    // Notifications
+    notifSubmitted: "आपली ई-एफआयआर यशस्वीरित्या सादर करण्यात आली आहे.",
+    notifVerified: "आपली ओळख डिजिलॉकरद्वारे यशस्वीरित्या पडताळण्यात आली आहे.",
+    notifEsigned: "आपली ई-स्वाक्षरी पूर्ण झाली आहे.",
+    notifScrutiny: "आपली ई-एफआयआर संबंधित ठाण्यात सध्या पुनरावलोकनाधीन आहे.",
+    notifAddInfoReq: "तपास अधिकाऱ्याने अतिरिक्त माहितीची विनंती केली आहे.",
+    notifFirRegistered: "आपली औपचारिक पोलीस एफआयआर यशस्वीरित्या नोंदवण्यात आली आहे.",
+
+    // Generic
+    close: "बंद करा",
+    cancel: "रद्द करा",
+    save: "जतन करा",
+    submit: "सादर करा",
+    requiredField: "हे क्षेत्र आवश्यक आहे",
+    viewDemoVideo: "इंटरॅक्टिव्ह डेमो पहा"
+  },
+
   hi: {
     // Top Bar & Header
-    govTitle: "दिल्ली पुलिस नागरिक सेवा पोर्टल",
+    govTitle: "मुंबई पुलिस नागरिक सेवा पोर्टल",
     govSubtitle: "भारत सरकार • गृह मंत्रालय आदर्श पहल",
     portalName: "ई-एफआईआर नागरिक पोर्टल",
     emergencyHelpline: "आपातकालीन: 112 | साइबर अपराध: 1930 | महिला हेल्पलाइन: 1091",
@@ -475,7 +887,7 @@ const TRANSLATIONS = {
     stage4Desc: "तुरंत प्रमाणित संदर्भ संख्या प्राप्त करें और पुलिस जांच की स्थिति को लाइव ट्रैक करें।",
 
     // Core Legal Disclaimer Notice
-    legalPrincipleBanner: "महत्वपूर्ण विधिक सूचना: डिजिटल प्रमाणीकरण केवल प्रविष्टि और नागरिक पहचान की इलेक्ट्रॉनिक प्रामाणिकता सुनिश्चित करता है। औपचारिक एफआईआर पंजीकरण भारतीय न्याय संहिता (BNS) / दंड प्रक्रिया संहिता के तहत पुलिस जांच और क्षेत्राधिकार सत्यापन के अधीन रहेगा।",
+    legalPrincipleBanner: "महत्वपूर्ण विधिक सूचना: डिजिटल प्रमाणीकरण केवल प्रविष्टि और नागरिक पहचान की इलेक्ट्रॉनिक प्रामाणिकता सुनिश्चित करता है। औपचारिक एफआईआर पंजीकरण भारतीय नागरिक सुरक्षा संहिता (BNSS) / दंड प्रक्रिया संहिता के तहत पुलिस जांच और क्षेत्राधिकार सत्यापन के अधीन रहेगा।",
 
     // Home Service Cards
     servicesTitle: "नागरिक पुलिस सेवाएं",
@@ -656,7 +1068,7 @@ const TRANSLATIONS = {
     btnCompleteAuthentication: "ई-एफआईआर प्रमाणीकरण पूरा करें",
 
     // Officer Login Page
-    officerLoginTitle: "दिल्ली पुलिस अधिकारी पोर्टल",
+    officerLoginTitle: "मुंबई पुलिस अधिकारी पोर्टल",
     officerLoginSubtitle: "केवल अधिकृत कर्मी • थाना प्रभारी / जांच अधिकारी लॉगिन",
     officerLoginUsername: "अधिकारी उपयोगकर्ता नाम",
     officerLoginPassword: "पासवर्ड",
@@ -676,13 +1088,10 @@ const TRANSLATIONS = {
     stagePoliceScrutiny: "पुलिस जांच एवं समीक्षा",
     statusCompleted: "पूर्ण",
     statusVerified: "सत्यापित",
-    statusPending: "जांच जारी है",
+    statusPending: "समीक्षाधीन",
     btnGoToDashboard: "डैशबोर्ड पर जाएं",
     btnPrintAck: "पावती रसीद प्रिंट / डाउनलोड करें",
     btnTrackNow: "इस ई-एफआईआर को ट्रैक करें",
-    policeContact24Title: "ई-एफआईआर सफलतापूर्वक जमा हुई",
-    policeContact24Body: "आपकी शिकायत प्राप्त हो गई है। इस ई-एफआईआर के संबंध में एक पुलिस अधिकारी 24 घंटों के भीतर आपसे संपर्क करेगा।",
-    policeContact24Ok: "ठीक है",
 
     // Acknowledgement Slip
     ackHeaderTitle: "राज्य पुलिस नागरिक सेवाएं • भारत सरकार आदर्श पोर्टल",
@@ -692,14 +1101,14 @@ const TRANSLATIONS = {
 
     // E-FIR Tracking
     trackTitle: "ई-एफआईआर स्थिति ट्रैक करें",
-    trackSubtitle: "जांच और पंजीकरण की वास्तविक स्थिति जानने के लिए अपनी ई-एफआईआर संदर्भ संख्या दर्ज करें।",
+    trackSubtitle: "समीक्षा और पंजीकरण की वास्तविक स्थिति जानने के लिए अपनी ई-एफआईआर संदर्भ संख्या दर्ज करें।",
     trackPlaceholder: "उदा. EFIR/2026/000123",
     btnTrackSubmit: "स्थिति जांचें",
     recentSubmissions: "हाल ही में दर्ज शिकायतें:",
     timelineTitle: "प्रगति समयरेखा",
     currentStageBadge: "वर्तमान चरण:",
     officerRemarksTitle: "पुलिस विभाग की टिप्पणी व निर्देश:",
-    noRemarksYet: "पुलिस जांच वर्तमान में प्रक्रियाधीन है। जांच अधिकारी द्वारा समीक्षा के पश्चात आधिकारिक टिप्पणी यहाँ प्रदर्शित होगी।",
+    noRemarksYet: "आपकी ई-एफआईआर वर्तमान में समीक्षाधीन है। जांच अधिकारी द्वारा समीक्षा के पश्चात आधिकारिक टिप्पणी यहाँ प्रदर्शित होगी।",
 
     // Additional Information Flow
     addInfoRequiredTitle: "अतिरिक्त जानकारी की आवश्यकता है",
@@ -748,7 +1157,7 @@ const TRANSLATIONS = {
     // Modal Actions
     firRegModalTitle: "औपचारिक पुलिस एफआईआर पंजीकृत करें",
     fieldFirNumber: "औपचारिक एफआईआर संख्या आवंटित करें",
-    fieldSectionsOfLaw: "लागू कानूनी धाराएं (उदा. BNS धारा 303(2), 318(4) / IPC)",
+    fieldSectionsOfLaw: "लागू कानूनी धाराएं (उदा. BNSS धारा 303(2), 318(4) / IPC)",
     fieldOfficerAssigned: "जांच अधिकारी (IO) का नाम एवं बैज नंबर",
     fieldShoRemarks: "थाना प्रभारी (SHO) का निष्कर्ष व आदेश",
     btnConfirmFirRegistration: "पुष्टि करें एवं एफआईआर दर्ज करें",
@@ -813,7 +1222,7 @@ const TRANSLATIONS = {
     statusVerifFailed: "सत्यापन असफल",
     statusEsignPending: "ई-हस्ताक्षर लंबित",
     statusAuthenticated: "डिजिटल प्रमाणीकरण पूर्ण",
-    statusPoliceScrutiny: "पुलिस जांच प्रक्रियाधीन",
+    statusPoliceScrutiny: "समीक्षाधीन",
     statusAddInfoRequired: "अतिरिक्त जानकारी अपेक्षित",
     statusFirRegistered: "एफआईआर पंजीकृत",
     statusTransferred: "अन्य थाने को स्थानांतरित",
